@@ -1,0 +1,381 @@
+/* =========================================
+   ABOUT PREVIEW
+========================================= */
+
+.about-preview {
+  background: #FFFFFF;
+}
+
+
+/* =========================================
+   MAIN LAYOUT
+========================================= */
+
+.about-preview-grid {
+  display: grid;
+
+  grid-template-columns: 0.95fr 1.05fr;
+
+  align-items: center;
+
+  gap: 70px;
+}
+
+
+/* =========================================
+   SCHOOL IMAGE
+========================================= */
+
+.about-preview-visual {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+
+.about-image-frame {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  padding: 12px;
+
+  background: #F4FAFC;
+
+  border: 1px solid #DCECF2;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 15px 40px rgba(0, 70, 100, 0.10);
+
+  overflow: hidden;
+}
+
+
+.about-image-frame img {
+  display: block;
+
+  width: 100%;
+
+  height: auto;
+
+  max-width: 100%;
+
+  object-fit: contain;
+
+  border-radius: 14px;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.about-preview-content {
+  width: 100%;
+
+  max-width: 620px;
+}
+
+
+.about-preview-content .section-heading {
+  margin-bottom: 25px;
+}
+
+
+.about-preview-content .section-heading h2 {
+  margin-top: 10px;
+}
+
+
+.about-preview-content .section-heading h2 span {
+  display: block;
+
+  color: var(--primary-blue);
+}
+
+
+.about-preview-content .section-heading p {
+  margin-top: 20px;
+
+  color: var(--muted-text);
+
+  font-size: 1rem;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================
+   INFORMATION CARDS
+========================================= */
+
+.about-highlights {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 14px;
+
+  margin-top: 25px;
+}
+
+
+.about-highlight {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 12px;
+
+  padding: 16px;
+
+  background: #F8FCFD;
+
+  border: 1px solid var(--border-color);
+
+  border-radius: 12px;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.about-highlight:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 8px 20px rgba(0, 70, 100, 0.08);
+}
+
+
+.about-highlight-icon {
+  width: 40px;
+
+  height: 40px;
+
+  flex-shrink: 0;
+
+  display: grid;
+
+  place-items: center;
+
+  background: #FFFFFF;
+
+  color: var(--primary-blue);
+
+  border-radius: 10px;
+
+  box-shadow:
+    0 3px 10px rgba(0, 70, 100, 0.08);
+}
+
+
+.about-highlight strong {
+  display: block;
+
+  color: var(--deep-blue);
+
+  font-size: 0.88rem;
+
+  line-height: 1.35;
+}
+
+
+.about-highlight span {
+  display: block;
+
+  margin-top: 4px;
+
+  color: var(--muted-text);
+
+  font-size: 0.75rem;
+
+  line-height: 1.45;
+}
+
+
+/* =========================================
+   SCHOOL INFORMATION TAGS
+========================================= */
+
+.about-level {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 9px;
+
+  margin-top: 18px;
+}
+
+
+.about-level span {
+  display: inline-flex;
+
+  align-items: center;
+
+  min-height: 34px;
+
+  padding: 0 14px;
+
+  border-radius: 999px;
+
+  background: #EAF6FA;
+
+  color: var(--deep-blue);
+
+  font-size: 0.72rem;
+
+  font-weight: 800;
+}
+
+
+/* =========================================
+   DISCOVER SCHOOL
+========================================= */
+
+.about-learn-more {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-top: 26px;
+
+  color: var(--deep-blue);
+
+  font-size: 0.9rem;
+
+  font-weight: 800;
+
+  transition:
+    gap 0.25s ease,
+    color 0.25s ease;
+}
+
+
+.about-learn-more:hover {
+  gap: 12px;
+
+  color: var(--primary-blue);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .about-preview-grid {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+  }
+
+
+  .about-preview-content {
+    max-width: 800px;
+  }
+
+
+  .about-image-frame {
+    max-width: 760px;
+
+    margin: 0 auto;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .about-preview-grid {
+    gap: 32px;
+  }
+
+
+  .about-image-frame {
+    padding: 7px;
+
+    border-radius: 16px;
+  }
+
+
+  .about-image-frame img {
+    border-radius: 11px;
+  }
+
+
+  .about-preview-content .section-heading p {
+    font-size: 0.92rem;
+
+    line-height: 1.7;
+  }
+
+
+  .about-highlights {
+    grid-template-columns: 1fr;
+
+    gap: 10px;
+
+    margin-top: 20px;
+  }
+
+
+  .about-highlight {
+    padding: 14px;
+  }
+
+
+  .about-level {
+    margin-top: 16px;
+  }
+
+
+  .about-learn-more {
+    margin-top: 22px;
+  }
+
+}
+
+
+/* =========================================
+   VERY SMALL PHONES
+========================================= */
+
+@media (max-width: 375px) {
+
+  .about-preview-content .section-heading p {
+    font-size: 0.88rem;
+  }
+
+
+  .about-highlight {
+    padding: 12px;
+  }
+
+
+  .about-highlight-icon {
+    width: 36px;
+
+    height: 36px;
+  }
+
+}

@@ -1,0 +1,391 @@
+/* =========================================
+   ACADEMICS PREVIEW
+========================================= */
+
+.academics-preview {
+  background: #F4FAFC;
+}
+
+
+/* =========================================
+   SECTION HEADING
+========================================= */
+
+.academics-heading {
+  max-width: 720px;
+
+  margin: 0 auto 45px;
+
+  text-align: center;
+}
+
+
+.academics-heading h2 {
+  margin-top: 10px;
+}
+
+
+.academics-heading h2 span {
+  display: block;
+
+  color: var(--primary-blue);
+}
+
+
+.academics-heading p {
+  max-width: 650px;
+
+  margin: 20px auto 0;
+
+  color: var(--muted-text);
+
+  font-size: 1rem;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================
+   ACADEMIC GRID
+========================================= */
+
+.academics-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 18px;
+}
+
+
+/* =========================================
+   ACADEMIC CARD
+========================================= */
+
+.academic-card {
+  position: relative;
+
+  min-height: 275px;
+
+  padding: 25px;
+
+  background: #FFFFFF;
+
+  border: 1px solid #DCECF2;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 8px 25px rgba(0, 70, 100, 0.06);
+
+  overflow: hidden;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+
+.academic-card::after {
+  content: '';
+
+  position: absolute;
+
+  right: -35px;
+
+  bottom: -35px;
+
+  width: 110px;
+
+  height: 110px;
+
+  border-radius: 50%;
+
+  background:
+    rgba(80, 160, 208, 0.08);
+}
+
+
+.academic-card:hover {
+  transform: translateY(-5px);
+
+  border-color:
+    rgba(0, 144, 192, 0.3);
+
+  box-shadow:
+    0 15px 35px rgba(0, 70, 100, 0.10);
+}
+
+
+/* =========================================
+   CARD TOP
+========================================= */
+
+.academic-card-top {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+
+.academic-number {
+  color: #A9C9D5;
+
+  font-size: 0.72rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.08em;
+}
+
+
+.academic-icon {
+  width: 48px;
+
+  height: 48px;
+
+  display: grid;
+
+  place-items: center;
+
+  color: var(--primary-blue);
+
+  background:
+    #EAF6FA;
+
+  border-radius: 13px;
+}
+
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.academic-card h3 {
+  margin-top: 35px;
+
+  color: var(--deep-blue);
+
+  font-size: 1.15rem;
+}
+
+
+.academic-card p {
+  margin-top: 12px;
+
+  color: var(--muted-text);
+
+  font-size: 0.84rem;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   INFORMATION STRIP
+========================================= */
+
+.academic-info-strip {
+  display: grid;
+
+  grid-template-columns:
+    1fr auto 1.3fr auto 1.3fr;
+
+  align-items: center;
+
+  gap: 28px;
+
+  margin-top: 35px;
+
+  padding: 22px 28px;
+
+  background: #FFFFFF;
+
+  border:
+    1px solid #DCECF2;
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 8px 25px rgba(0, 70, 100, 0.05);
+}
+
+
+.academic-info-item {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+
+.academic-info-item span {
+  color: var(--muted-text);
+
+  font-size: 0.7rem;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.06em;
+}
+
+
+.academic-info-item strong {
+  color: var(--deep-blue);
+
+  font-size: 0.84rem;
+}
+
+
+.academic-info-divider {
+  width: 1px;
+
+  height: 42px;
+
+  background:
+    #DCECF2;
+}
+
+
+/* =========================================
+   ACTION
+========================================= */
+
+.academics-action {
+  display: flex;
+
+  justify-content: center;
+
+  margin-top: 28px;
+}
+
+
+.academics-link {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  color: var(--deep-blue);
+
+  font-size: 0.9rem;
+
+  font-weight: 800;
+
+  transition:
+    gap 0.25s ease,
+    color 0.25s ease;
+}
+
+
+.academics-link:hover {
+  gap: 12px;
+
+  color: var(--primary-blue);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .academics-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+
+  .academic-info-strip {
+    grid-template-columns:
+      1fr 1fr;
+
+    gap: 20px;
+  }
+
+
+  .academic-info-divider {
+    display: none;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .academics-heading {
+    margin-bottom: 32px;
+  }
+
+
+  .academics-heading p {
+    font-size: 0.92rem;
+
+    line-height: 1.7;
+  }
+
+
+  .academics-grid {
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+  }
+
+
+  .academic-card {
+    min-height: auto;
+
+    padding: 21px;
+  }
+
+
+  .academic-card h3 {
+    margin-top: 28px;
+  }
+
+
+  .academic-info-strip {
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+
+    padding: 20px;
+  }
+
+
+  .academic-info-item strong {
+    font-size: 0.82rem;
+  }
+
+}
+
+
+/* =========================================
+   VERY SMALL PHONES
+========================================= */
+
+@media (max-width: 375px) {
+
+  .academic-card {
+    padding: 18px;
+  }
+
+
+  .academic-card p {
+    font-size: 0.8rem;
+  }
+
+}

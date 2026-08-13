@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
+:root {
+  /* Milton Public School Brand */
+  --primary-blue: #0090C0;
+  --deep-blue: #0078B0;
+  --light-blue: #50A0D0;
+  --accent-red: #D02010;
+
+  /* Neutrals */
+  --white: #FFFFFF;
+  --light-bg: #F4FAFC;
+  --dark-text: #16323F;
+
+  /* Supporting */
+  --muted-text: #5D737D;
+  --border-color: #DCECF2;
+
+  /* Layout */
+  --container-width: 1200px;
+  --section-padding: 80px;
+
+  /* Effects */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 24px;
+
+  --shadow-sm: 0 4px 15px rgba(22, 50, 63, 0.06);
+  --shadow-md: 0 10px 30px rgba(22, 50, 63, 0.10);
+
+  font-family: 'Poppins', sans-serif;
+  color: var(--dark-text);
+  background: var(--white);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--white);
+  color: var(--dark-text);
+  line-height: 1.6;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.container {
+  width: min(100% - 40px, var(--container-width));
+  margin-inline: auto;
+}
+
+.section {
+  padding: var(--section-padding) 0;
+}
+
+.section-light {
+  background: var(--light-bg);
+}
+
+.section-heading {
+  max-width: 700px;
+  margin-bottom: 45px;
+}
+
+.section-heading .eyebrow {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: var(--primary-blue);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.section-heading h2 {
+  margin-bottom: 15px;
+  color: var(--deep-blue);
+  font-family: 'Merriweather', serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.15;
+}
+
+.section-heading p {
+  color: var(--muted-text);
+}
+
+@media (max-width: 768px) {
+  :root {
+    --section-padding: 60px;
+  }
+
+  .container {
+    width: min(100% - 30px, var(--container-width));
+  }
+}
