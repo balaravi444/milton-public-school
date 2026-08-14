@@ -1,0 +1,105 @@
+.about-leadership {
+  background-color: #FFFFFF;
+}
+
+.leadership-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.leadership-text {
+  position: relative;
+}
+
+.leadership-text h2 {
+  color: #16323F;
+  font-family: 'Merriweather', serif;
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+}
+
+.quote-icon {
+  color: #DCECF2;
+  margin-bottom: 20px;
+}
+
+.leadership-quote p {
+  color: #16323F;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.leadership-author {
+  margin-top: 30px;
+  border-top: 2px solid #DCECF2;
+  padding-top: 20px;
+  display: inline-block;
+}
+
+.author-name {
+  color: #0078B0;
+  font-family: 'Merriweather', serif;
+  font-size: 1.3rem;
+  margin: 0 0 5px 0;
+}
+
+.author-title {
+  color: #607984;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.leadership-image-wrapper {
+  position: relative;
+}
+
+.leadership-image-frame {
+  position: relative;
+  border-radius: 20px;
+  overflow: visible;
+}
+
+.leadership-placeholder {
+  width: 100%;
+  aspect-ratio: 3/4;
+  background: linear-gradient(135deg, #F4FAFC, #DCECF2);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #A5B8C1;
+  position: relative;
+  z-index: 2;
+}
+
+.placeholder-content {
+  color: #607984;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.decorative-dots {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-image: radial-gradient(#0090C0 2px, transparent 2px);
+  background-size: 20px 20px;
+  bottom: -20px;
+  left: -20px;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .leadership-content {
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 80px;
+  }
+}

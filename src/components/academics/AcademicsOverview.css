@@ -1,0 +1,75 @@
+.academics-overview {
+  background-color: #FFFFFF;
+}
+
+.overview-header {
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+
+.overview-header h2 {
+  color: #16323F;
+  font-family: 'Merriweather', serif;
+  font-size: 2.2rem;
+  margin: 10px 0 20px;
+}
+
+.overview-subtitle {
+  color: #607984;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.overview-features {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.feature-card {
+  background: #F4FAFC;
+  padding: 40px 30px;
+  border-radius: 20px;
+  border: 1px solid #DCECF2;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.feature-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  background: #FFFFFF;
+  color: #0078B0;
+  border-radius: 16px;
+  margin-bottom: 25px;
+  box-shadow: 0 5px 15px rgba(0, 120, 176, 0.1);
+  border: 1px solid #DCECF2;
+}
+
+.feature-card h3 {
+  color: #16323F;
+  font-family: 'Merriweather', serif;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.feature-card p {
+  color: #607984;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .overview-features {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

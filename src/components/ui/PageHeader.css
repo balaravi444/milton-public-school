@@ -1,0 +1,73 @@
+.page-header {
+  position: relative;
+  background: linear-gradient(135deg, #0090C0, #0078B0);
+  padding: 80px 0;
+  text-align: center;
+  color: #FFFFFF;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+
+.page-header-content {
+  position: relative;
+  z-index: 2;
+}
+
+.page-header h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.breadcrumb {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  backdrop-filter: blur(10px);
+}
+
+.breadcrumb span {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.breadcrumb .breadcrumb-current {
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+.header-decoration {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  pointer-events: none;
+}
+
+.header-decoration.left {
+  width: 300px;
+  height: 300px;
+  left: -100px;
+  top: -150px;
+}
+
+.header-decoration.right {
+  width: 400px;
+  height: 400px;
+  right: -150px;
+  bottom: -200px;
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    padding: 60px 0;
+    margin-bottom: 40px;
+  }
+  
+  .page-header h1 {
+    font-size: 2rem;
+  }
+}
