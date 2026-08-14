@@ -13,30 +13,30 @@ function AcademicsPreview() {
     {
       icon: BookOpen,
       number: '01',
-      title: 'Baby Class',
+      title: 'Early Education',
       description:
-        'A welcoming beginning that introduces young learners to school life and early learning.',
+        'A nurturing introduction to formal education, fostering curiosity and foundational cognitive skills.',
     },
     {
       icon: School,
       number: '02',
       title: 'Primary School',
       description:
-        'Building strong foundations through the early years of school education.',
+        'Building a robust academic framework through inquiry-based learning and core competency development.',
     },
     {
       icon: BookOpen,
       number: '03',
       title: 'Middle School',
       description:
-        'Supporting students as they develop knowledge, confidence and learning habits.',
+        'Cultivating critical thinking, intellectual independence, and advanced problem-solving capabilities.',
     },
     {
       icon: GraduationCap,
       number: '04',
       title: 'High School',
       description:
-        'Continuing academic development through the secondary school years.',
+        'Rigorous preparation for 10th Standard board examinations and future academic endeavors.',
     },
   ];
 
@@ -58,14 +58,12 @@ function AcademicsPreview() {
           </span>
 
           <h2>
-            Learning at
-            <span>Every Stage</span>
+            A Future-Ready,
+            <span> Rigorous Curriculum</span>
           </h2>
 
           <p>
-            Milton Public School provides English Medium education
-            under the Karnataka State Board from Baby Class to
-            10th Standard.
+            We provide a comprehensive educational journey guided by the Karnataka State Board syllabus, designed to challenge intellects and inspire innovation at every academic stage.
           </p>
 
         </motion.div>

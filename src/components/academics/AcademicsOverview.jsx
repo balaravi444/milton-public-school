@@ -11,41 +11,41 @@ function AcademicsOverview() {
           <h2>Our Educational Foundation</h2>
           <p className="overview-subtitle">
             At Milton Public School, we provide a robust and holistic educational 
-            experience designed to prepare students for future challenges.
+            experience meticulously designed to prepare our students for future global challenges.
           </p>
         </div>
 
         <div className="overview-features">
-          <div className="feature-card">
-            <div className="feature-icon">
-              <Globe size={32} />
+          <div className="feature-card premium">
+            <div className="feature-icon-wrapper">
+              <Globe size={36} strokeWidth={1.5} />
             </div>
             <h3>English Medium</h3>
             <p>
-              All our core subjects are taught in English, ensuring our students 
-              develop strong communication skills for the modern world.
+              Our core curriculum is delivered entirely in English, ensuring our students 
+              develop the impeccable communication skills required for the modern world.
             </p>
           </div>
 
-          <div className="feature-card">
-            <div className="feature-icon">
-              <BookOpen size={32} />
+          <div className="feature-card premium">
+            <div className="feature-icon-wrapper">
+              <BookOpen size={36} strokeWidth={1.5} />
             </div>
             <h3>State Board Curriculum</h3>
             <p>
-              We follow the rigorous and comprehensive Karnataka State Board syllabus, 
-              providing a structured pathway to academic success.
+              We adhere strictly to the rigorous and comprehensive Karnataka State Board syllabus, 
+              providing a structured and proven pathway to academic success.
             </p>
           </div>
 
-          <div className="feature-card">
-            <div className="feature-icon">
-              <Award size={32} />
+          <div className="feature-card premium">
+            <div className="feature-icon-wrapper">
+              <Award size={36} strokeWidth={1.5} />
             </div>
             <h3>Comprehensive Journey</h3>
             <p>
-              From the first steps in Baby Class all the way to 10th Standard, 
-              we support our students through every critical stage of their growth.
+              From their very first steps in Early Education up to their 10th Standard graduation, 
+              we champion our students through every critical stage of their growth.
             </p>
           </div>
         </div>

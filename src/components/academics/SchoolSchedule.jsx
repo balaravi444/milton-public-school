@@ -1,5 +1,5 @@
 import './SchoolSchedule.css';
-import { Clock, Calendar, CheckCircle2 } from 'lucide-react';
+import { Clock, Calendar, CheckCircle } from 'lucide-react';
 
 function SchoolSchedule() {
   return (
@@ -8,38 +8,52 @@ function SchoolSchedule() {
         
         <div className="schedule-content">
           <div className="schedule-text">
-            <span className="eyebrow">Daily Routine</span>
-            <h2>School Hours & Environment</h2>
+            <span className="eyebrow">Operating Hours</span>
+            <h2>Structured for Academic Excellence</h2>
             
             <p className="schedule-description">
-              Our daily schedule is designed to optimize learning while ensuring 
-              students have adequate time for extracurricular activities, rest, 
-              and socialization.
+              Our daily schedule is carefully designed to maximize student focus, 
+              incorporating dedicated times for intensive learning, collaborative 
+              projects, and essential extracurricular activities.
             </p>
-
-            <div className="schedule-box">
-              <div className="schedule-icon-wrapper">
-                <Clock size={30} />
+            
+            <div className="schedule-cards">
+              <div className="schedule-box premium-blue">
+                <div className="schedule-icon-wrapper">
+                  <Clock size={32} strokeWidth={1.5} />
+                </div>
+                <div className="schedule-details">
+                  <h3>School Hours</h3>
+                  <div className="time-display">9:30 AM <span className="time-sep">-</span> 4:15 PM</div>
+                  <p>Regular Academic Classes</p>
+                </div>
               </div>
-              <div className="schedule-details">
-                <h3>Official School Hours</h3>
-                <div className="time-display">9:30 AM — 4:15 PM</div>
-                <p>Monday to Saturday</p>
+              
+              <div className="schedule-box premium-white">
+                <div className="schedule-icon-wrapper">
+                  <Calendar size={32} strokeWidth={1.5} />
+                </div>
+                <div className="schedule-details">
+                  <h3>Office & Admin Hours</h3>
+                  <div className="time-display small">Mon-Sat: 10:00 AM - 6:45 PM</div>
+                  <div className="time-display small">Sunday: 11:30 AM - 4:00 PM</div>
+                  <p>Admissions, Fees, & Inquiries</p>
+                </div>
               </div>
             </div>
-            
+
             <ul className="schedule-benefits">
               <li>
-                <CheckCircle2 size={20} className="benefit-icon" />
-                <span>Structured academic periods</span>
+                <CheckCircle size={20} className="benefit-icon" />
+                <span>Optimized learning periods for peak concentration</span>
               </li>
               <li>
-                <CheckCircle2 size={20} className="benefit-icon" />
-                <span>Dedicated time for extracurriculars</span>
+                <CheckCircle size={20} className="benefit-icon" />
+                <span>Dedicated administrative support throughout the week</span>
               </li>
               <li>
-                <CheckCircle2 size={20} className="benefit-icon" />
-                <span>Supervised lunch and recreational breaks</span>
+                <CheckCircle size={20} className="benefit-icon" />
+                <span>Structured balance of academics and co-curriculars</span>
               </li>
             </ul>
           </div>
@@ -48,11 +62,12 @@ function SchoolSchedule() {
              <div className="schedule-image-frame">
                 <img 
                   src="/images/school-building.png" 
-                  alt="Students at Milton Public School" 
+                  alt="Milton Public School Campus" 
                   className="schedule-image"
                 />
-                <div className="decorative-circle-accent"></div>
              </div>
+             <div className="decorative-circle-accent"></div>
+             <div className="decorative-dots-accent"></div>
           </div>
         </div>
 
