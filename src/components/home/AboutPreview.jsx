@@ -47,18 +47,16 @@ function AboutPreview() {
             <div className="section-heading">
 
               <span className="eyebrow">
-                About Our School
+                Our Legacy
               </span>
 
               <h2>
-                A Place to Learn,
-                <span>Grow and Progress</span>
+                A Legacy of Academic Excellence &
+                <span> Holistic Development</span>
               </h2>
 
               <p>
-                Milton Public School Manvi is an English Medium school
-                following the Karnataka State Board curriculum, providing
-                education from Baby Class to 10th Standard.
+                Forged under the prestigious M.N.J.V.M Educational Trust, Milton Public School stands as a beacon of knowledge in Manvi. We are dedicated to nurturing tomorrow's leaders through a rigorous, values-driven English Medium curriculum from Baby Class to 10th Standard.
               </p>
 
             </div>
@@ -117,11 +115,11 @@ function AboutPreview() {
             <div className="about-level">
 
               <span>
-                English Medium
+                Empowering Minds
               </span>
 
               <span>
-                Baby Class – 10th Standard
+                Shaping Futures
               </span>
 
             </div>

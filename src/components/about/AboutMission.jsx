@@ -27,9 +27,9 @@ function AboutMission() {
         <div className="mission-header text-center">
           <span className="eyebrow">Mission & Vision</span>
           <h2>Guiding Principles</h2>
-          <div className="mission-tagline">
-            "Education is the most powerful weapon which you can use to change the world."
-          </div>
+          <p className="mission-intro">
+            At Milton Public School, our principles form the bedrock of our educational philosophy, guiding our students towards academic and personal excellence.
+          </p>
         </div>
 
         <div className="mission-grid">
