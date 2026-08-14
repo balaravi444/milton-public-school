@@ -18,13 +18,14 @@
   border-radius: 20px;
   overflow: hidden;
   box-shadow: var(--shadow-md);
-  aspect-ratio: 4/3;
+  background: var(--deep-blue);
 }
 
 .journey-image {
+  display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
 }
 
 .journey-experience-badge {
