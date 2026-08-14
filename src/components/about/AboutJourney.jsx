@@ -1,5 +1,5 @@
 import './AboutJourney.css';
-import { BookOpen, MapPin, Users } from 'lucide-react';
+import { BookOpen, MapPin, GraduationCap, Trophy } from 'lucide-react';
 
 function AboutJourney() {
   return (
@@ -17,25 +17,23 @@ function AboutJourney() {
                />
                <div className="journey-experience-badge">
                  <span className="badge-year">2009</span>
-                 <span className="badge-text">Established</span>
+                 <span className="badge-text">Legacy of Excellence</span>
                </div>
             </div>
+            
+            <div className="decorative-dots left"></div>
           </div>
           
           <div className="journey-content">
-            <span className="eyebrow">Our Journey</span>
-            <h2 className="journey-title">A Legacy of Quality Education in Manvi</h2>
+            <span className="eyebrow">Our Legacy</span>
+            <h2 className="journey-title">A Decade of Excellence in Manvi</h2>
             
             <p className="journey-description">
-              Established in the academic year 2009-10, Milton Public School has grown 
-              to become a trusted institution in Manvi. We provide a rigorous and 
-              well-rounded English Medium education following the Karnataka State Board curriculum.
+              Since our foundation in 2009 under the visionary leadership of the M.N.J.V.M Educational Trust, Milton Public School has stood as a beacon of academic rigor and holistic development in the heart of Manvi.
             </p>
             
             <p className="journey-description">
-              From Baby Class up to the 10th Standard, our focus has always been on nurturing 
-              young minds, fostering a love for learning, and preparing our students to excel 
-              in an ever-changing world.
+              We believe that true education transcends the classroom. By seamlessly blending the robust Karnataka State Board curriculum with character-building initiatives, we empower our students—from their first steps in Baby Class to their graduation in 10th Standard—to become the innovative leaders of tomorrow.
             </p>
 
             <div className="journey-stats">
@@ -45,16 +43,16 @@ function AboutJourney() {
                  </div>
                  <div className="stat-info">
                    <h4>Curriculum</h4>
-                   <p>Karnataka State Board</p>
+                   <p>State Board</p>
                  </div>
               </div>
-
+              
               <div className="journey-stat-card">
                  <div className="stat-icon-wrapper">
-                    <Users size={24} />
+                    <GraduationCap size={24} />
                  </div>
                  <div className="stat-info">
-                   <h4>Classes</h4>
+                   <h4>Academics</h4>
                    <p>Baby Class - 10th Std</p>
                  </div>
               </div>
@@ -68,11 +66,20 @@ function AboutJourney() {
                    <p>Manvi, Karnataka</p>
                  </div>
               </div>
-            </div>
 
+              <div className="journey-stat-card">
+                 <div className="stat-icon-wrapper">
+                    <Trophy size={24} />
+                 </div>
+                 <div className="stat-info">
+                   <h4>Medium</h4>
+                   <p>English Medium</p>
+                 </div>
+              </div>
+            </div>
+            
           </div>
         </div>
-
       </div>
     </section>
   );

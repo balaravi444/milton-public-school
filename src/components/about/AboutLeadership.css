@@ -11,95 +11,112 @@
 
 .leadership-text {
   position: relative;
+  z-index: 2;
 }
 
 .leadership-text h2 {
   color: #16323F;
   font-family: 'Merriweather', serif;
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   margin-bottom: 30px;
+  line-height: 1.2;
 }
 
 .quote-icon {
-  color: #DCECF2;
+  color: var(--accent-gold);
+  opacity: 0.3;
   margin-bottom: 20px;
+  transform: rotate(180deg);
+  display: inline-block;
+}
+
+.leadership-quote {
+  position: relative;
+  margin: 0;
+  padding-left: 25px;
+  border-left: 3px solid var(--accent-gold);
 }
 
 .leadership-quote p {
-  color: #16323F;
-  font-size: 1.15rem;
+  color: #2D4A58;
+  font-size: 1.25rem;
   line-height: 1.8;
   font-style: italic;
+  font-family: 'Merriweather', serif;
   margin-bottom: 20px;
 }
 
 .leadership-author {
-  margin-top: 30px;
-  border-top: 2px solid #DCECF2;
-  padding-top: 20px;
+  margin-top: 35px;
   display: inline-block;
 }
 
 .author-name {
   color: var(--deep-blue);
   font-family: 'Merriweather', serif;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   margin: 0 0 5px 0;
 }
 
 .author-title {
-  color: #607984;
+  color: var(--accent-gold);
   font-size: 0.95rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
   margin: 0;
 }
 
 .leadership-image-wrapper {
   position: relative;
+  z-index: 1;
 }
 
 .leadership-image-frame {
   position: relative;
+  background: var(--deep-blue);
   border-radius: 20px;
-  overflow: visible;
-}
-
-.leadership-placeholder {
-  width: 100%;
   aspect-ratio: 3/4;
-  background: linear-gradient(135deg, #F4FAFC, #DCECF2);
-  border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px dashed #A5B8C1;
-  position: relative;
-  z-index: 2;
+  box-shadow: var(--shadow-lg);
 }
 
-.placeholder-content {
-  color: #607984;
+.leadership-placeholder {
+  color: rgba(255, 255, 255, 0.5);
   text-align: center;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.2rem;
-  font-weight: 500;
+  letter-spacing: 1px;
 }
 
-.decorative-dots {
+.decorative-element {
   position: absolute;
+  z-index: -1;
+}
+
+.decorative-element.square {
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--accent-gold);
+  border-radius: 20px;
+  top: 20px;
+  left: -20px;
+}
+
+.decorative-element.dots {
   width: 150px;
   height: 150px;
   background-image: radial-gradient(var(--primary-blue) 2px, transparent 2px);
-  background-size: 20px 20px;
-  bottom: -20px;
-  left: -20px;
-  z-index: 1;
+  background-size: 15px 15px;
+  opacity: 0.15;
+  bottom: -30px;
+  right: -30px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .leadership-content {
-    grid-template-columns: 1.2fr 0.8fr;
+    grid-template-columns: 1fr 0.8fr;
     gap: 80px;
   }
 }

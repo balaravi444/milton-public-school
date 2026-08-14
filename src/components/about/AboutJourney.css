@@ -11,6 +11,19 @@
 
 .journey-image-wrapper {
   position: relative;
+  z-index: 2;
+}
+
+.decorative-dots.left {
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  width: 150px;
+  height: 150px;
+  background-image: radial-gradient(var(--primary-blue) 2px, transparent 2px);
+  background-size: 15px 15px;
+  opacity: 0.15;
+  z-index: -1;
 }
 
 .journey-image-frame {
@@ -76,9 +89,9 @@
 
 .journey-stats {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  margin-top: 35px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-top: 40px;
 }
 
 .journey-stat-card {

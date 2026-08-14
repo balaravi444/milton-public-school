@@ -1,79 +1,115 @@
 .about-management {
-  background-color: var(--light-bg);
-  border-top: 1px solid var(--border-color);
+  background-color: #F4FAFC;
+  border-top: 1px solid #DCECF2;
+  border-bottom: 1px solid #DCECF2;
 }
 
 .management-header {
-  max-width: 700px;
-  margin: 0 auto 50px;
+  max-width: 800px;
+  margin: 0 auto 60px;
 }
 
 .management-header h2 {
-  color: var(--deep-blue);
+  color: #16323F;
   font-family: 'Merriweather', serif;
-  font-size: 2.2rem;
-  margin: 10px 0 20px;
+  font-size: 2.5rem;
+  margin: 15px 0 25px;
 }
 
 .management-subtitle {
   color: var(--muted-text);
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   line-height: 1.7;
 }
 
 .management-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(1, 1fr);
   gap: 30px;
 }
 
 .management-card {
-  background: var(--white);
-  padding: 30px;
-  border-radius: var(--radius-md);
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
   box-shadow: var(--shadow-sm);
-  display: flex;
-  align-items: center;
-  gap: 25px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.03);
 }
 
 .management-card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-hover);
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.management-avatar-wrapper {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
 }
 
 .management-avatar {
-  width: 70px;
-  height: 70px;
-  background: var(--light-bg);
-  color: var(--primary-blue);
+  width: 90px;
+  height: 90px;
+  background: #F4FAFC;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
-  border: 1px solid var(--border-color);
+  color: var(--primary-blue);
+  box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.04);
+  border: 3px solid #FFFFFF;
+  outline: 2px solid #E8F2F6;
 }
 
 .management-info h3 {
-  color: var(--deep-blue);
   font-family: 'Merriweather', serif;
-  font-size: 1.25rem;
-  margin: 0 0 5px 0;
+  font-size: 1.35rem;
+  color: #16323F;
+  margin: 0 0 8px 0;
 }
 
 .management-role {
-  color: var(--accent-red);
+  color: var(--accent-gold);
   font-family: 'Poppins', sans-serif;
   font-size: 0.95rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
 }
 
-@media (min-width: 768px) {
+/* Executive Cards (President & VP) get special styling */
+.executive-card {
+  background: linear-gradient(180deg, #FFFFFF 0%, #FAFCFD 100%);
+  border-top: 4px solid var(--accent-gold);
+}
+
+.executive-card .management-avatar {
+  background: var(--deep-blue);
+  color: var(--accent-gold);
+  outline: 2px solid var(--accent-gold);
+  width: 105px;
+  height: 105px;
+}
+
+.executive-card .management-info h3 {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 600px) {
   .management-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+@media (min-width: 1000px) {
+  .management-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  /* Make Executive cards span 2 columns if we want an asymmetrical layout, 
+     but for 4 members, 4 columns is perfect. */
 }

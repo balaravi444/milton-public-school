@@ -1,12 +1,12 @@
 import './AboutManagement.css';
-import { User, ShieldCheck } from 'lucide-react';
+import { User, ShieldCheck, Briefcase, Landmark } from 'lucide-react';
 
 function AboutManagement() {
   const management = [
-    { name: 'D. Suryaprabha', title: 'President' },
-    { name: 'D. Jayanth', title: 'Vice President' },
-    { name: 'D.V Prakash', title: 'Secretary' },
-    { name: 'D. Soumya', title: 'Treasurer' },
+    { name: 'D. Suryaprabha', title: 'President', icon: ShieldCheck },
+    { name: 'D. Jayanth', title: 'Vice President', icon: Briefcase },
+    { name: 'D.V Prakash', title: 'Secretary', icon: User },
+    { name: 'D. Soumya', title: 'Treasurer', icon: Landmark },
   ];
 
   return (
@@ -14,26 +14,32 @@ function AboutManagement() {
       <div className="container">
         
         <div className="management-header text-center">
-          <span className="eyebrow">Leadership Team</span>
+          <span className="eyebrow">Leadership & Governance</span>
           <h2>M.N.J.V.M Educational Trust</h2>
           <p className="management-subtitle">
-            Guided by visionary leaders dedicated to providing quality education 
-            and shaping the future of our students.
+            Guided by a visionary board of directors, the Trust is deeply committed to upholding the highest standards of academic excellence and fostering an environment where every student can thrive.
           </p>
         </div>
 
         <div className="management-grid">
-          {management.map((member, index) => (
-            <div key={index} className="management-card">
-              <div className="management-avatar">
-                {index === 0 ? <ShieldCheck size={40} /> : <User size={40} />}
+          {management.map((member, index) => {
+            const Icon = member.icon;
+            // Highlight President and VP
+            const isExecutive = index < 2; 
+            return (
+              <div key={index} className={`management-card ${isExecutive ? 'executive-card' : ''}`}>
+                <div className="management-avatar-wrapper">
+                  <div className="management-avatar">
+                    <Icon size={isExecutive ? 44 : 36} strokeWidth={isExecutive ? 1.5 : 2} />
+                  </div>
+                </div>
+                <div className="management-info">
+                  <h3>{member.name}</h3>
+                  <span className="management-role">{member.title}</span>
+                </div>
               </div>
-              <div className="management-info">
-                <h3>{member.name}</h3>
-                <span className="management-role">{member.title}</span>
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
       </div>
