@@ -41,7 +41,7 @@
 }
 
 .author-name {
-  color: #0078B0;
+  color: var(--deep-blue);
   font-family: 'Merriweather', serif;
   font-size: 1.3rem;
   margin: 0 0 5px 0;
@@ -90,7 +90,7 @@
   position: absolute;
   width: 150px;
   height: 150px;
-  background-image: radial-gradient(#0090C0 2px, transparent 2px);
+  background-image: radial-gradient(var(--primary-blue) 2px, transparent 2px);
   background-size: 20px 20px;
   bottom: -20px;
   left: -20px;

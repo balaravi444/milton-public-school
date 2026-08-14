@@ -47,7 +47,7 @@
   width: 70px;
   height: 70px;
   background: #FFFFFF;
-  color: #0078B0;
+  color: var(--deep-blue);
   border-radius: 16px;
   margin-bottom: 25px;
   box-shadow: 0 5px 15px rgba(0, 120, 176, 0.1);

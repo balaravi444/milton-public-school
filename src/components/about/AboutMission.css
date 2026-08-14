@@ -51,14 +51,14 @@
   width: 80px;
   height: 80px;
   background: #EAF4F8;
-  color: #0078B0;
+  color: var(--deep-blue);
   border-radius: 50%;
   margin-bottom: 25px;
   transition: background 0.3s ease, color 0.3s ease;
 }
 
 .mission-card:hover .mission-icon-wrapper {
-  background: #0078B0;
+  background: var(--deep-blue);
   color: #FFFFFF;
 }
 

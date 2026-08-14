@@ -1,6 +1,6 @@
 .page-header {
   position: relative;
-  background: linear-gradient(135deg, #0090C0, #0078B0);
+  background: linear-gradient(135deg, var(--primary-blue), var(--deep-blue));
   padding: 80px 0;
   text-align: center;
   color: #FFFFFF;
@@ -36,7 +36,7 @@
 }
 
 .breadcrumb .breadcrumb-current {
-  color: #FFFFFF;
+  color: var(--accent-gold);
   font-weight: 600;
 }
 

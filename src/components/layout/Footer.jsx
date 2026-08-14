@@ -46,7 +46,7 @@ function Footer() {
               </li>
               <li>
                 <Mail size={18} className="contact-icon" />
-                <a href="mailto:info@miltonpublicschool.com">info@miltonpublicschool.com</a>
+                <a href="mailto:miltonpublicschool4749@gmail.com">miltonpublicschool4749@gmail.com</a>
               </li>
               <li>
                 <Clock size={18} className="contact-icon" />

@@ -73,7 +73,7 @@
 
   margin: 0 auto 20px;
 
-  background: #D02010;
+  background: var(--accent-red);
 
   border-radius: 10px;
 }
@@ -99,7 +99,7 @@
 .academics-heading .eyebrow {
   display: inline-block;
 
-  color: #0078B0;
+  color: var(--deep-blue);
 
   font-family: 'Poppins', sans-serif;
 
@@ -129,7 +129,7 @@
 .academics-heading h2 span {
   display: block;
 
-  color: #0090C0;
+  color: var(--primary-blue);
 }
 
 
@@ -221,7 +221,7 @@
     linear-gradient(
       90deg,
       #50A0D0,
-      #0090C0
+      var(--primary-blue)
     );
 }
 
@@ -268,7 +268,7 @@
   background:
     linear-gradient(
       90deg,
-      #0090C0,
+      var(--primary-blue),
       #50A0D0
     );
 }
@@ -278,8 +278,8 @@
   background:
     linear-gradient(
       90deg,
-      #0078B0,
-      #0090C0
+      var(--deep-blue),
+      var(--primary-blue)
     );
 }
 
@@ -288,8 +288,8 @@
   background:
     linear-gradient(
       90deg,
-      #0078B0,
-      #D02010
+      var(--deep-blue),
+      var(--accent-red)
     );
 }
 
@@ -343,7 +343,7 @@
 
   background: #F0F8FB;
 
-  color: #0078B0;
+  color: var(--deep-blue);
 
   font-family: 'Poppins', sans-serif;
 
@@ -374,8 +374,8 @@
   background:
     linear-gradient(
       135deg,
-      #0090C0,
-      #0078B0
+      var(--primary-blue),
+      var(--deep-blue)
     );
 
   border-radius: 16px;
@@ -402,7 +402,7 @@
     linear-gradient(
       135deg,
       #50A0D0,
-      #0090C0
+      var(--primary-blue)
     );
 }
 
@@ -411,8 +411,8 @@
   background:
     linear-gradient(
       135deg,
-      #0090C0,
-      #0078B0
+      var(--primary-blue),
+      var(--deep-blue)
     );
 }
 
@@ -421,7 +421,7 @@
   background:
     linear-gradient(
       135deg,
-      #0078B0,
+      var(--deep-blue),
       #006594
     );
 }
@@ -431,8 +431,8 @@
   background:
     linear-gradient(
       135deg,
-      #0078B0,
-      #D02010
+      var(--deep-blue),
+      var(--accent-red)
     );
 }
 
@@ -529,7 +529,7 @@
   align-items: center;
   gap: 8px;
   padding: 14px 28px;
-  background: #0078B0;
+  background: var(--deep-blue);
   color: #FFFFFF;
   border-radius: 12px;
   font-weight: 700;
@@ -538,7 +538,7 @@
 }
 
 .academics-link:hover {
-  background: #0090C0;
+  background: var(--primary-blue);
   transform: translateY(-2px);
   gap: 12px;
 }
