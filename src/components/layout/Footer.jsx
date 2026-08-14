@@ -50,7 +50,10 @@ function Footer() {
               </li>
               <li>
                 <Clock size={18} className="contact-icon" />
-                <span>Mon-Sat: 9:30 AM - 4:15 PM</span>
+                <div>
+                  <span style={{ display: 'block' }}>Mon-Sat: 10:00 AM - 6:45 PM</span>
+                  <span style={{ display: 'block', fontSize: '0.85rem' }}>Sunday: 11:30 AM - 4:00 PM</span>
+                </div>
               </li>
             </ul>
           </div>

@@ -49,13 +49,19 @@ function Navbar() {
           ))}
         </nav>
 
-        <a
-          href="tel:+918088291165"
-          className="header-phone"
-        >
-          <Phone size={17} />
-          <span>Call Us</span>
-        </a>
+        <div className="header-actions">
+          <a
+            href="tel:+918088291165"
+            className="header-phone"
+          >
+            <Phone size={17} />
+            <span className="phone-number">8088291165</span>
+          </a>
+          
+          <NavLink to="/contact" className="btn-primary header-cta" onClick={closeMenu}>
+            Contact Us
+          </NavLink>
+        </div>
 
         <button
           className="menu-toggle"

@@ -16,10 +16,18 @@
   margin: 10px 0 20px;
 }
 
-.mission-subtitle {
-  color: #607984;
-  font-size: 1.1rem;
-  line-height: 1.7;
+.mission-tagline {
+  color: var(--accent-gold);
+  font-family: 'Merriweather', serif;
+  font-size: 1.35rem;
+  font-style: italic;
+  line-height: 1.6;
+  font-weight: 600;
+  padding: 15px 30px;
+  background: var(--deep-blue);
+  border-radius: var(--radius-md);
+  display: inline-block;
+  box-shadow: var(--shadow-md);
 }
 
 .mission-grid {

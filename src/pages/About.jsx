@@ -2,6 +2,7 @@ import PageHeader from '../components/ui/PageHeader';
 import AboutJourney from '../components/about/AboutJourney';
 import AboutMission from '../components/about/AboutMission';
 import AboutLeadership from '../components/about/AboutLeadership';
+import AboutManagement from '../components/about/AboutManagement';
 import './About.css';
 
 function About() {
@@ -10,6 +11,7 @@ function About() {
       <PageHeader title="About Milton Public School" breadcrumb="About Us" />
       <AboutJourney />
       <AboutMission />
+      <AboutManagement />
       <AboutLeadership />
     </main>
   );

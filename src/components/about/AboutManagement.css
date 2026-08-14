@@ -1,0 +1,79 @@
+.about-management {
+  background-color: var(--light-bg);
+  border-top: 1px solid var(--border-color);
+}
+
+.management-header {
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+
+.management-header h2 {
+  color: var(--deep-blue);
+  font-family: 'Merriweather', serif;
+  font-size: 2.2rem;
+  margin: 10px 0 20px;
+}
+
+.management-subtitle {
+  color: var(--muted-text);
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.management-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.management-card {
+  background: var(--white);
+  padding: 30px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.management-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+}
+
+.management-avatar {
+  width: 70px;
+  height: 70px;
+  background: var(--light-bg);
+  color: var(--primary-blue);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid var(--border-color);
+}
+
+.management-info h3 {
+  color: var(--deep-blue);
+  font-family: 'Merriweather', serif;
+  font-size: 1.25rem;
+  margin: 0 0 5px 0;
+}
+
+.management-role {
+  color: var(--accent-red);
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media (min-width: 768px) {
+  .management-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
