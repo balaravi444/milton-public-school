@@ -25,6 +25,8 @@
 
   padding: 12px 25px;
 
+  text-align: left;
+
   border-right:
     1px solid rgba(255, 255, 255, 0.15);
 }
@@ -45,12 +47,24 @@
   border:
     1px solid rgba(255, 255, 255, 0.20);
 
-  border-radius: 10px;
+  border-radius: 12px;
 
   background:
-    rgba(255, 255, 255, 0.08);
+    rgba(255, 255, 255, 0.12);
+
+  backdrop-filter: blur(8px);
+  
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 
   color: var(--white);
+  
+  transition: all 0.3s ease;
+}
+
+.stat-item:hover .stat-icon {
+  background: rgba(255, 255, 255, 0.20);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
 .stat-item strong {

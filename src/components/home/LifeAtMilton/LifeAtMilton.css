@@ -1,0 +1,623 @@
+/* =========================================
+   LIFE AT MILTON
+========================================= */
+
+.life-at-milton {
+  position: relative;
+
+  padding: 95px 0;
+
+  background: #FFFFFF;
+
+  overflow: hidden;
+}
+
+
+/* =========================================
+   SECTION HEADING
+========================================= */
+
+.life-heading {
+  max-width: 720px;
+
+  margin: 0 auto 48px;
+
+  text-align: center;
+}
+
+
+.life-heading .eyebrow {
+  display: inline-block;
+
+  color: #D02010;
+
+  font-family: 'Poppins', sans-serif;
+
+  font-size: 0.75rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.13em;
+
+  text-transform: uppercase;
+}
+
+
+.life-heading h2 {
+  margin-top: 10px;
+
+  color: #16323F;
+
+  font-family: 'Merriweather', serif;
+
+  font-size: clamp(2rem, 4vw, 3rem);
+
+  line-height: 1.2;
+}
+
+
+.life-heading h2 span {
+  display: block;
+
+  color: #0090C0;
+}
+
+
+.life-heading p {
+  max-width: 650px;
+
+  margin: 20px auto 0;
+
+  color: #607984;
+
+  font-family: 'Poppins', sans-serif;
+
+  font-size: 0.95rem;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================
+   ACTIVITY GRID
+========================================= */
+
+.life-activities-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 18px;
+}
+
+
+/* =========================================
+   ACTIVITY CARD
+========================================= */
+
+.life-activity-card {
+  position: relative;
+  min-height: 310px;
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  border: 1px solid #DCECF2;
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: left;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+
+/* Top colour line */
+
+.life-card-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.life-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.life-activity-card:hover .life-card-image {
+  transform: scale(1.05);
+}
+
+.life-card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.05) 50%, rgba(0, 0, 0, 0.4) 100%);
+  pointer-events: none;
+}
+
+
+/* =========================================
+   CARD VARIATIONS
+========================================= */
+
+.life-activity-card.sports::before {
+  background:
+    linear-gradient(
+      90deg,
+      #0090C0,
+      #50A0D0
+    );
+}
+
+
+.life-activity-card.karate::before {
+  background:
+    linear-gradient(
+      90deg,
+      #0078B0,
+      #0090C0
+    );
+}
+
+
+.life-activity-card.ncc::before {
+  background:
+    linear-gradient(
+      90deg,
+      #0078B0,
+      #006594
+    );
+}
+
+
+.life-activity-card.cultural::before {
+  background:
+    linear-gradient(
+      90deg,
+      #50A0D0,
+      #0090C0
+    );
+}
+
+
+.life-activity-card.trips::before {
+  background:
+    linear-gradient(
+      90deg,
+      #0078B0,
+      #D02010
+    );
+}
+
+
+/* =========================================
+   CARD HOVER
+========================================= */
+
+.life-activity-card:hover {
+  transform: translateY(-7px);
+
+  border-color:
+    rgba(0, 144, 192, 0.35);
+
+  box-shadow:
+    0 18px 42px rgba(22, 50, 63, 0.12);
+}
+
+
+/* =========================================
+   CARD TOP
+========================================= */
+
+.life-card-top {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.life-card-number {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 38px;
+  height: 26px;
+
+  border-radius: 999px;
+
+  background: #EAF6FA;
+
+  color: #0078B0;
+
+  font-family: 'Poppins', sans-serif;
+
+  font-size: 0.68rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.08em;
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.life-card-icon {
+  width: 50px;
+  height: 50px;
+
+  display: grid;
+
+  place-items: center;
+
+  color: #FFFFFF;
+
+  background:
+    linear-gradient(
+      135deg,
+      #0090C0,
+      #0078B0
+    );
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 8px 24px rgba(0, 120, 176, 0.18);
+
+  transition:
+    transform 0.3s ease;
+}
+
+
+.life-activity-card:hover .life-card-icon {
+  transform:
+    rotate(-4deg)
+    scale(1.06);
+}
+
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.life-card-content {
+  position: relative;
+  z-index: 2;
+  padding: 22px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.life-card-content h3 {
+  color: #16323F;
+
+  font-family: 'Merriweather', serif;
+
+  font-size: 1.05rem;
+
+  line-height: 1.4;
+}
+
+
+.life-card-content p {
+  margin-top: 11px;
+
+  color: #607984;
+
+  font-family: 'Poppins', sans-serif;
+
+  font-size: 0.81rem;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   CARD ARROW
+========================================= */
+
+.life-card-arrow {
+  position: absolute;
+
+  right: 20px;
+  bottom: 20px;
+
+  z-index: 2;
+
+  display: grid;
+
+  place-items: center;
+
+  width: 36px;
+  height: 36px;
+
+  color: #FFFFFF;
+
+  background: #0078B0;
+
+  border-radius: 50%;
+
+  opacity: 0;
+
+  transform: translateX(-6px);
+
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+.life-activity-card:hover .life-card-arrow {
+  opacity: 1;
+
+  transform: translateX(0);
+}
+
+
+/* =========================================
+   COMMUNITY FEATURE
+========================================= */
+
+.life-community {
+  display: flex;
+
+  align-items: center;
+
+  gap: 22px;
+
+  margin-top: 30px;
+
+  padding: 25px 28px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #0078B0,
+      #0090C0
+    );
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 15px 32px rgba(0, 120, 176, 0.17);
+}
+
+
+.life-community-icon {
+  flex-shrink: 0;
+
+  width: 52px;
+  height: 52px;
+
+  display: grid;
+
+  place-items: center;
+
+  color: #FFFFFF;
+
+  background:
+    rgba(255, 255, 255, 0.14);
+
+  border:
+    1px solid rgba(255, 255, 255, 0.20);
+
+  border-radius: 15px;
+}
+
+
+.life-community-content {
+  flex: 1;
+}
+
+
+.life-community-content span {
+  color:
+    rgba(255, 255, 255, 0.70);
+
+  font-family: 'Poppins', sans-serif;
+
+  font-size: 0.68rem;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.08em;
+}
+
+
+.life-community-content h3 {
+  margin-top: 5px;
+
+  color: #FFFFFF;
+
+  font-family: 'Merriweather', serif;
+
+  font-size: 1.05rem;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   GALLERY LINK
+========================================= */
+
+.life-gallery-link {
+  flex-shrink: 0;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 11px 17px;
+
+  color: #0078B0;
+
+  background: #FFFFFF;
+
+  border-radius: 10px;
+
+  font-family: 'Poppins', sans-serif;
+
+  font-size: 0.78rem;
+
+  font-weight: 800;
+
+  text-decoration: none;
+
+  transition:
+    gap 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+.life-gallery-link:hover {
+  gap: 12px;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .life-at-milton {
+    padding: 80px 0;
+  }
+
+
+  .life-activities-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+
+  .life-community {
+    flex-wrap: wrap;
+  }
+
+
+  .life-gallery-link {
+    margin-left: 74px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .life-at-milton {
+    padding: 68px 0;
+  }
+
+
+  .life-heading {
+    margin-bottom: 32px;
+  }
+
+
+  .life-heading p {
+    font-size: 0.88rem;
+
+    line-height: 1.7;
+  }
+
+
+  .life-activities-grid {
+    grid-template-columns: 1fr;
+
+    gap: 13px;
+  }
+
+
+  .life-activity-card {
+    min-height: 230px;
+
+    padding: 21px;
+  }
+
+
+  .life-card-content {
+    padding-top: 26px;
+  }
+
+
+  .life-card-arrow {
+    display: none;
+  }
+
+
+  .life-community {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    padding: 22px;
+  }
+
+
+  .life-community-content h3 {
+    font-size: 0.95rem;
+  }
+
+
+  .life-gallery-link {
+    margin-left: 0;
+  }
+
+}
+
+
+/* =========================================
+   SMALL PHONES
+========================================= */
+
+@media (max-width: 375px) {
+
+  .life-at-milton {
+    padding: 58px 0;
+  }
+
+
+  .life-activity-card {
+    padding: 19px;
+  }
+
+
+  .life-card-content p {
+    font-size: 0.78rem;
+  }
+
+}

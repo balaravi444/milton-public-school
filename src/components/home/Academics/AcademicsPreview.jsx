@@ -1,4 +1,9 @@
-import { ArrowRight, BookOpen, GraduationCap, School } from 'lucide-react';
+import {
+  ArrowRight,
+  BookOpen,
+  GraduationCap,
+  School,
+} from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import './AcademicsPreview.css';
@@ -40,8 +45,6 @@ function AcademicsPreview() {
 
       <div className="container">
 
-        {/* SECTION HEADER */}
-
         <motion.div
           className="academics-heading"
           initial={{ opacity: 0, y: 25 }}
@@ -67,8 +70,6 @@ function AcademicsPreview() {
 
         </motion.div>
 
-
-        {/* ACADEMIC CARDS */}
 
         <div className="academics-grid">
 
@@ -116,8 +117,6 @@ function AcademicsPreview() {
 
         </div>
 
-
-        {/* SCHOOL CURRICULUM STRIP */}
 
         <motion.div
           className="academic-info-strip"
@@ -173,8 +172,6 @@ function AcademicsPreview() {
 
         </motion.div>
 
-
-        {/* ABOUT ACADEMICS LINK */}
 
         <div className="academics-action">
 

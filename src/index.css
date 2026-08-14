@@ -20,12 +20,13 @@
   --section-padding: 80px;
 
   /* Effects */
-  --radius-sm: 8px;
-  --radius-md: 14px;
-  --radius-lg: 24px;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 28px;
 
-  --shadow-sm: 0 4px 15px rgba(22, 50, 63, 0.06);
-  --shadow-md: 0 10px 30px rgba(22, 50, 63, 0.10);
+  --shadow-sm: 0 4px 12px rgba(22, 50, 63, 0.04);
+  --shadow-md: 0 12px 36px rgba(22, 50, 63, 0.08);
+  --shadow-hover: 0 16px 48px rgba(0, 144, 192, 0.12);
 
   font-family: 'Poppins', sans-serif;
   color: var(--dark-text);
