@@ -1,0 +1,94 @@
+.campus-safety-section {
+  background-color: var(--deep-blue);
+  color: var(--white);
+}
+
+.safety-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.safety-content .eyebrow {
+  color: var(--accent-gold);
+}
+
+.safety-content h2 {
+  color: var(--white);
+  font-family: 'Merriweather', serif;
+  font-size: 2.2rem;
+  margin: 10px 0 20px;
+}
+
+.safety-description {
+  color: #EAF6FA;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+.safety-features {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.safety-feature-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.safety-icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--accent-gold);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.safety-text h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25rem;
+  margin: 0 0 8px 0;
+  color: var(--white);
+}
+
+.safety-text p {
+  color: #EAF6FA;
+  line-height: 1.6;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.safety-image-container {
+  position: relative;
+}
+
+.safety-image-placeholder {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.15) 100%);
+  border-radius: var(--radius-md);
+  border: 2px dashed rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+}
+
+@media (min-width: 992px) {
+  .safety-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}
