@@ -28,21 +28,25 @@ function Hero() {
           </div>
 
           {/* PRIMARY SCHOOL IDENTITY */}
-          <h1 className="hero-title">
-            <span className="hero-school-name">
-              MILTON PUBLIC SCHOOL
-            </span>
+          <div className="hero-identity-block">
+            <h2 className="hero-trust-header">
+              ಶ್ರೀ ಎಂ.ಎನ್.ಜೆ.ವಿ.ಎಂ. ಶೈಕ್ಷಣಿಕ ಮತ್ತು ಸೇವಾ ಟ್ರಸ್ಟ್ (ರಿ).ಮಾನ್ವಿ.
+            </h2>
+            <h1 className="hero-title">
+              <span className="hero-school-name">
+                MILTON PUBLIC SCHOOL
+              </span>
+              <span className="hero-location">
+                MANVI
+              </span>
+            </h1>
 
-            <span className="hero-location">
-              MANVI
-            </span>
-          </h1>
-
-          {/* Description */}
-          <p className="hero-description">
-            English Medium education under the Karnataka State Board,
-            serving students from Baby Class to 10th Standard.
-          </p>
+            {/* Description */}
+            <p className="hero-description">
+              English Medium education under the Karnataka State Board,
+              serving students from Baby Class to 10th Standard.
+            </p>
+          </div>
 
           {/* ACTION BUTTONS */}
           <div className="hero-actions">

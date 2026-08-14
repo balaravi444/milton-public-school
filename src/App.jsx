@@ -13,6 +13,8 @@ import Gallery from './pages/Gallery';
 import NewsEvents from './pages/NewsEvents';
 import Downloads from './pages/Downloads';
 import Contact from './pages/Contact';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
         <Route path="/news-events" element={<NewsEvents />} />
         <Route path="/downloads" element={<Downloads />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-of-service" element={<TermsOfService />} />
       </Routes>
       <Footer />
       <FloatingWhatsApp />
