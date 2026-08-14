@@ -17,7 +17,7 @@ function AboutLeadership() {
             
             <blockquote className="leadership-quote">
               <p>
-                "At Milton Public School, we believe that education is not merely the accumulation of facts, but the ignition of curiosity. It is about shaping the character, values, and the very future of our students. Since our establishment, our dedicated educators have worked tirelessly to cultivate a nurturing environment where every child feels valued, intellectually challenged, and inspired to succeed."
+                "At Milton Public School, we believe that education is not merely the accumulation of facts, but the ignition of curiosity. It is about shaping the character, values, and the very future of our students. Since our founding, our dedicated educators have worked tirelessly to cultivate a nurturing environment where every child feels valued, intellectually challenged, and inspired to succeed."
               </p>
               
               <p>

@@ -188,7 +188,7 @@
   border-radius: 22px;
 
   box-shadow:
-    0 12px 30px rgba(22, 50, 63, 0.07);
+    0 15px 35px rgba(0, 0, 0, 0.08);
 
   overflow: hidden;
 
@@ -305,7 +305,7 @@
     rgba(0, 144, 192, 0.35);
 
   box-shadow:
-    0 20px 42px rgba(0, 88, 120, 0.13);
+    0 25px 55px rgba(0, 88, 120, 0.15);
 }
 
 

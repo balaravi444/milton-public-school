@@ -24,13 +24,11 @@ function AboutManagement() {
         <div className="management-grid">
           {management.map((member, index) => {
             const Icon = member.icon;
-            // Highlight President and VP
-            const isExecutive = index < 2; 
             return (
-              <div key={index} className={`management-card ${isExecutive ? 'executive-card' : ''}`}>
+              <div key={index} className="management-card executive-card">
                 <div className="management-avatar-wrapper">
                   <div className="management-avatar">
-                    <Icon size={isExecutive ? 44 : 36} strokeWidth={isExecutive ? 1.5 : 2} />
+                    <Icon size={44} strokeWidth={1.5} />
                   </div>
                 </div>
                 <div className="management-info">

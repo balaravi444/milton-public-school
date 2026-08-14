@@ -63,7 +63,7 @@ function AcademicsPreview() {
           </h2>
 
           <p>
-            We provide a comprehensive educational journey guided by the Karnataka State Board syllabus, designed to challenge intellects and inspire innovation at every academic stage.
+            We provide a comprehensive educational journey guided by the Karnataka State Board syllabus. With a proud track record of a 100% board passing rate, our curriculum is rigorously designed to challenge intellects, ensure absolute academic excellence, and inspire innovation at every stage.
           </p>
 
         </motion.div>

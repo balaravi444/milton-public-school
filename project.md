@@ -23,7 +23,7 @@ School: Milton Public School
 
 Location: Manvi
 
-Established: 2009--10
+Serving students since: 2009--10
 
 Medium: English Medium
 

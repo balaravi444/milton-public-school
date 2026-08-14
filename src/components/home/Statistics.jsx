@@ -5,18 +5,18 @@ import './Statistics.css';
 const statistics = [
   {
     icon: Award,
-    value: '2009–10',
-    label: 'Established',
-  },
-  {
-    icon: BookOpen,
-    value: 'State',
-    label: 'Board',
+    value: '15+',
+    label: 'Years of Excellence',
   },
   {
     icon: GraduationCap,
-    value: 'English',
-    label: 'Medium',
+    value: '100%',
+    label: 'Passing Rate',
+  },
+  {
+    icon: BookOpen,
+    value: 'State Board',
+    label: 'English Medium',
   },
   {
     icon: Clock3,

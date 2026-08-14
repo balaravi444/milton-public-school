@@ -27,12 +27,12 @@
 }
 
 .feature-card.premium {
-  background: linear-gradient(145deg, #FFFFFF, #FAFCFD);
-  border: 1px solid rgba(0, 144, 192, 0.1);
+  background: linear-gradient(145deg, #FFFFFF, #FFFCF5);
+  border: 1px solid rgba(212, 175, 55, 0.2);
   border-radius: 20px;
   padding: 40px;
   text-align: center;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.04);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -45,7 +45,7 @@
   left: 0;
   width: 100%;
   height: 4px;
-  background: linear-gradient(90deg, var(--deep-blue), var(--primary-blue));
+  background: linear-gradient(90deg, #D4AF37, #F3D97F, #D4AF37);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.4s ease;
@@ -53,7 +53,7 @@
 
 .feature-card.premium:hover {
   transform: translateY(-8px);
-  box-shadow: 0 15px 40px rgba(0, 144, 192, 0.12);
+  box-shadow: 0 15px 40px rgba(212, 175, 55, 0.15);
 }
 
 .feature-card.premium:hover::before {
@@ -61,8 +61,8 @@
 }
 
 .feature-icon-wrapper {
-  color: var(--primary-blue);
-  background: #EAF4F8;
+  color: #D4AF37;
+  background: #FFF9E6;
   width: 80px;
   height: 80px;
   margin: 0 auto 25px;
@@ -70,7 +70,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  box-shadow: inset 0 2px 5px rgba(0,0,0,0.05);
+  box-shadow: inset 0 2px 5px rgba(212, 175, 55, 0.15);
 }
 
 .feature-card.premium h3 {
@@ -91,4 +91,19 @@
   .overview-features {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+.highlight-gold {
+  color: #B5952F;
+  font-weight: 700;
+  background: linear-gradient(90deg, #B5952F, #D4AF37);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.gold-eyebrow {
+  color: #B5952F !important;
+  background: rgba(212, 175, 55, 0.1) !important;
+  border: 1px solid rgba(212, 175, 55, 0.3) !important;
 }

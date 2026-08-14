@@ -1,35 +1,35 @@
 import './AcademicStages.css';
-import { Baby, BookOpen, FlaskConical, GraduationCap } from 'lucide-react';
+import { Sprout, Compass, Microscope, Award } from 'lucide-react';
 
 function AcademicStages() {
   const stages = [
     {
       title: 'Baby Class & LKG/UKG',
       desc: 'A nurturing environment where our youngest learners take their first steps into the world of formal education, focusing on foundational cognitive and social skills.',
-      bgColor: '#EAF4F8',
-      textColor: '#0078B0',
-      icon: Baby
+      bgColor: '#FDF8E8',
+      textColor: '#B5952F',
+      icon: Sprout
     },
     {
       title: 'Primary Education',
       desc: 'Building a robust academic framework in core subjects while encouraging natural curiosity, creativity, and independent thinking.',
-      bgColor: '#F0F8FB',
-      textColor: '#0090C0',
-      icon: BookOpen
+      bgColor: '#FDF8E8',
+      textColor: '#B5952F',
+      icon: Compass
     },
     {
       title: 'Middle School',
       desc: 'Expanding intellectual horizons and developing critical problem-solving capabilities to prepare students for rigorous higher-level academics.',
-      bgColor: '#F4FAFC',
-      textColor: '#16323F',
-      icon: FlaskConical
+      bgColor: '#FDF8E8',
+      textColor: '#B5952F',
+      icon: Microscope
     },
     {
       title: 'High School',
       desc: 'Focused, rigorous preparation for the pivotal 10th Standard board examinations, guiding students towards ultimate academic excellence.',
-      bgColor: '#FFF5F4',
-      textColor: '#D02010',
-      icon: GraduationCap
+      bgColor: '#FDF8E8',
+      textColor: '#B5952F',
+      icon: Award
     }
   ];
 
@@ -54,7 +54,12 @@ function AcademicStages() {
                   <Icon size={32} strokeWidth={1.5} />
                 </div>
                 <div className="timeline-content">
-                  <span className="timeline-step">Stage {index + 1}</span>
+                  <span 
+                    className="timeline-step"
+                    style={{ backgroundColor: stage.bgColor, color: stage.textColor }}
+                  >
+                    Stage {index + 1}
+                  </span>
                   <h3>{stage.title}</h3>
                   <p>{stage.desc}</p>
                 </div>

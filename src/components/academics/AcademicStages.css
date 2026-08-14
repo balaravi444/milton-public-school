@@ -31,9 +31,10 @@
   top: 0;
   bottom: 0;
   left: 45px;
-  width: 2px;
-  background: linear-gradient(180deg, var(--primary-blue) 0%, rgba(0, 144, 192, 0.1) 100%);
+  width: 3px;
+  background: linear-gradient(180deg, #F3D97F 0%, #D4AF37 50%, #B5952F 100%);
   z-index: 1;
+  border-radius: 4px;
 }
 
 .timeline-card {
@@ -46,12 +47,13 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
   position: relative;
   z-index: 2;
-  border: 1px solid rgba(0, 144, 192, 0.05);
-  transition: transform 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .timeline-card:hover {
-  transform: translateX(10px);
+  transform: translateX(12px) translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
 }
 
 .timeline-icon-circle {
@@ -73,14 +75,12 @@
 
 .timeline-step {
   display: inline-block;
-  background: #F4FAFC;
-  color: var(--primary-blue);
-  padding: 5px 12px;
+  padding: 6px 14px;
   border-radius: 20px;
   font-size: 0.85rem;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 1.2px;
   margin-bottom: 15px;
 }
 

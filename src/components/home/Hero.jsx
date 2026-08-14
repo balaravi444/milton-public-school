@@ -125,7 +125,7 @@ function Hero() {
             <div className="hero-card-line" />
 
             <p>
-              Established 2009–2010
+              15+ Years of Excellence Since 2009
             </p>
 
             <div className="hero-card-details">
