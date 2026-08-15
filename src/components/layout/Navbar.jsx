@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Menu, X, Phone } from 'lucide-react';
+import { Menu, X, PhoneCall } from 'lucide-react';
 import './Navbar.css';
 
 const navigation = [
@@ -24,7 +24,7 @@ function Navbar() {
 
   return (
     <header className="site-header">
-      <div className="container navbar">
+      <div className="navbar">
 
         <NavLink to="/" className="brand" onClick={closeMenu}>
           <img
@@ -50,17 +50,13 @@ function Navbar() {
         </nav>
 
         <div className="header-actions">
-          <a
-            href="tel:+918088291165"
-            className="header-phone"
-          >
-            <Phone size={17} />
-            <span className="phone-number">8088291165</span>
-          </a>
-          
-          <NavLink to="/contact" className="btn-primary header-cta" onClick={closeMenu}>
-            Contact Us
-          </NavLink>
+          <div className="header-phone" style={{ alignItems: 'center', gap: '8px' }}>
+            <PhoneCall size={17} />
+            <div style={{ display: 'flex', flexDirection: 'column', fontSize: '0.85rem', lineHeight: '1.2' }}>
+              <a href="tel:+918088291165" style={{ color: 'inherit', textDecoration: 'none' }}>80882 91165</a>
+              <a href="tel:+919901464563" style={{ color: 'inherit', textDecoration: 'none' }}>99014 64563</a>
+            </div>
+          </div>
         </div>
 
         <button

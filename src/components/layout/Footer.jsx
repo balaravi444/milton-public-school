@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { MapPin, PhoneCall, Mail, Clock } from 'lucide-react';
 import './Footer.css';
 
 function Footer() {
@@ -44,12 +44,18 @@ function Footer() {
                 <span>Manvi, Karnataka</span>
               </li>
               <li>
-                <Phone size={18} className="contact-icon" />
-                <a href="tel:+918088291165">+91 80882 91165</a>
+                <PhoneCall size={18} className="contact-icon" />
+                <div style={{display: 'flex', flexDirection: 'column', gap: '4px'}}>
+                  <a href="tel:+918088291165" style={{whiteSpace: 'nowrap'}}>+91 80882 91165</a>
+                  <a href="tel:+919901464563" style={{whiteSpace: 'nowrap'}}>+91 99014 64563</a>
+                </div>
               </li>
               <li>
                 <Mail size={18} className="contact-icon" />
-                <a href="mailto:miltonpublicschool4749@gmail.com">miltonpublicschool4749@gmail.com</a>
+                <div style={{display: 'flex', flexDirection: 'column', gap: '4px'}}>
+                  <a href="mailto:miltonpublicschoolmanvi4749@gmail.com" style={{whiteSpace: 'nowrap'}}>miltonpublicschoolmanvi4749@gmail.com</a>
+                  <a href="mailto:miltonpublicschoolmanvi9999@gmail.com" style={{whiteSpace: 'nowrap'}}>miltonpublicschoolmanvi9999@gmail.com</a>
+                </div>
               </li>
               <li className="hours-block">
                 <Clock size={18} className="contact-icon" style={{ marginTop: '4px' }} />

@@ -1,4 +1,4 @@
-import { ArrowRight, Phone, Clock3 } from 'lucide-react';
+import { ArrowRight, PhoneCall, Clock3 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import './Hero.css';
@@ -30,7 +30,7 @@ function Hero() {
           {/* PRIMARY SCHOOL IDENTITY */}
           <div className="hero-identity-block">
             <h2 className="hero-trust-header">
-              ಶ್ರೀ ಎಂ.ಎನ್.ಜೆ.ವಿ.ಎಂ. ಶೈಕ್ಷಣಿಕ ಮತ್ತು ಸೇವಾ ಟ್ರಸ್ಟ್ (ರಿ).ಮಾನ್ವಿ.
+              M.N.J.V.M Educational Trust
             </h2>
             <h1 className="hero-title">
               <span className="hero-school-name">
@@ -84,19 +84,17 @@ function Hero() {
 
             <div className="hero-meta-divider" />
 
-            <a
-              href="tel:+918088291165"
-              className="hero-meta-item hero-phone"
-            >
+            <div className="hero-meta-item hero-phone">
               <div className="hero-meta-icon">
-                <Phone size={19} />
+                <PhoneCall size={19} />
               </div>
 
-              <div>
+              <div style={{ display: 'flex', flexDirection: 'column', lineHeight: '1.4' }}>
                 <span>Call the School</span>
-                <strong>80882 91165</strong>
+                <a href="tel:+918088291165" style={{ color: 'inherit', textDecoration: 'none' }}><strong style={{fontSize: '0.9rem'}}>80882 91165</strong></a>
+                <a href="tel:+919901464563" style={{ color: 'inherit', textDecoration: 'none' }}><strong style={{fontSize: '0.9rem'}}>99014 64563</strong></a>
               </div>
-            </a>
+            </div>
 
           </div>
 

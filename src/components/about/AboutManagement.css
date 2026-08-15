@@ -52,8 +52,8 @@
 }
 
 .management-avatar {
-  width: 90px;
-  height: 90px;
+  width: 120px;
+  height: 120px;
   background: #F4FAFC;
   border-radius: 50%;
   display: flex;
@@ -63,6 +63,33 @@
   box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.04);
   border: 3px solid #FFFFFF;
   outline: 2px solid #E8F2F6;
+}
+
+.management-dp-container {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #FFFFFF;
+  outline: 2px solid #E8F2F6;
+  box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--deep-blue);
+}
+
+.executive-card .management-dp-container {
+  width: 150px;
+  height: 150px;
+  outline: 2px solid var(--accent-gold);
+}
+
+.management-dp {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
 }
 
 .management-info h3 {
@@ -91,8 +118,8 @@
   background: var(--deep-blue);
   color: var(--accent-gold);
   outline: 2px solid var(--accent-gold);
-  width: 105px;
-  height: 105px;
+  width: 150px;
+  height: 150px;
 }
 
 .executive-card .management-info h3 {

@@ -16,9 +16,12 @@ import Contact from './pages/Contact';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 
+import ScrollToTop from './components/ui/ScrollToTop';
+
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Navbar />
 
       <Routes>

@@ -39,7 +39,8 @@ function Contact() {
                   </div>
                   <div>
                     <h4>Phone Number</h4>
-                    <a href="tel:+918088291165">+91 80882 91165</a>
+                    <a href="tel:+918088291165" style={{display: 'block', marginBottom: '4px', whiteSpace: 'nowrap'}}>+91 80882 91165</a>
+                    <a href="tel:+919901464563" style={{display: 'block', whiteSpace: 'nowrap'}}>+91 99014 64563</a>
                   </div>
                 </div>
 
@@ -49,7 +50,8 @@ function Contact() {
                   </div>
                   <div>
                     <h4>Email Address</h4>
-                    <a href="mailto:miltonpublicschool4749@gmail.com">miltonpublicschool4749@gmail.com</a>
+                    <a href="mailto:miltonpublicschoolmanvi4749@gmail.com" style={{display: 'block', marginBottom: '4px', whiteSpace: 'nowrap'}}>miltonpublicschoolmanvi4749@gmail.com</a>
+                    <a href="mailto:miltonpublicschoolmanvi9999@gmail.com" style={{display: 'block', whiteSpace: 'nowrap'}}>miltonpublicschoolmanvi9999@gmail.com</a>
                   </div>
                 </div>
               </div>
