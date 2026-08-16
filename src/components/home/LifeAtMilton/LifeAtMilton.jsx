@@ -113,9 +113,8 @@ function LifeAtMilton() {
             const Icon = activity.icon;
 
             return (
-              <motion.article
+              <motion.div
                 key={activity.title}
-                className={`life-activity-card ${activity.className}`}
                 initial={{ opacity: 0, y: 25 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.15 }}
@@ -124,28 +123,34 @@ function LifeAtMilton() {
                   delay: index * 0.07,
                 }}
               >
+                <Link
+                  to="/gallery"
+                  className={`life-activity-card ${activity.className}`}
+                  style={{ textDecoration: 'none', color: 'inherit' }}
+                >
 
-                <div className="life-card-image-wrapper">
-                  <img src={activity.image} alt={activity.title} className="life-card-image" />
-                  <div className="life-card-overlay"></div>
-                  
-                  <div className="life-card-top">
-                    <span className="life-card-number">{activity.number}</span>
-                    <div className="life-card-icon"><Icon size={20} /></div>
+                  <div className="life-card-image-wrapper">
+                    <img src={activity.image} alt={activity.title} className="life-card-image" />
+                    <div className="life-card-overlay"></div>
+                    
+                    <div className="life-card-top">
+                      <span className="life-card-number">{activity.number}</span>
+                      <div className="life-card-icon"><Icon size={20} /></div>
+                    </div>
                   </div>
-                </div>
 
-                <div className="life-card-content">
-                  <h3>{activity.title}</h3>
-                  <p>{activity.description}</p>
-                </div>
+                  <div className="life-card-content">
+                    <h3>{activity.title}</h3>
+                    <p>{activity.description}</p>
+                  </div>
 
 
-                <div className="life-card-arrow">
-                  <ArrowRight size={18} />
-                </div>
+                  <div className="life-card-arrow">
+                    <ArrowRight size={18} />
+                  </div>
 
-              </motion.article>
+                </Link>
+              </motion.div>
             );
 
           })}

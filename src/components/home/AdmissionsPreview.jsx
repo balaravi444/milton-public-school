@@ -38,13 +38,43 @@ function AdmissionsPreview() {
           </div>
           
           <div className="admissions-preview-image">
-            <div className="admissions-image-frame">
-              {/* Optional: Add a real image here when available */}
-              <div className="admissions-placeholder">
-                 <div className="decorative-circle"></div>
-                 <div className="decorative-dots"></div>
-              </div>
+          <div className="admissions-callback-card">
+            <div className="admissions-callback-header">
+              <h3>
+                <span>📞</span> Request a Call Back
+              </h3>
+              <p>
+                Have questions about admissions or school timings? Drop your details and our office will call you.
+              </p>
             </div>
+            
+            <form 
+              className="admissions-callback-form" 
+              onSubmit={(e) => { 
+                e.preventDefault(); 
+                alert('Thank you! Our office will call you back shortly.'); 
+              }}
+            >
+              <div className="form-group">
+                <input type="text" placeholder="Parent's Name" required />
+              </div>
+              <div className="form-group">
+                <input type="tel" placeholder="Phone Number" required />
+              </div>
+              <div className="form-group">
+                <select required defaultValue="">
+                  <option value="" disabled>Select Grade</option>
+                  <option value="Baby Class">Baby Class</option>
+                  <option value="Primary">Primary School</option>
+                  <option value="Middle">Middle School</option>
+                  <option value="High School">High School (10th)</option>
+                </select>
+              </div>
+              <button type="submit" className="admissions-callback-submit">
+                Submit Inquiry →
+              </button>
+            </form>
+          </div>
           </div>
         </div>
 

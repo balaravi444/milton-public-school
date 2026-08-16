@@ -14,7 +14,7 @@ function AboutManagement() {
       <div className="container">
         
         <div className="management-header text-center">
-          <span className="eyebrow">Leadership & Governance</span>
+          <span className="eyebrow highlight-glow">Leadership & Governance</span>
           <h2>M.N.J.V.M Educational Trust</h2>
           <p className="management-subtitle">
             Guided by a visionary board of directors, the Trust is deeply committed to upholding the highest standards of academic excellence and fostering an environment where every student can thrive.

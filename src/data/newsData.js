@@ -1,0 +1,50 @@
+export const newsData = [
+  {
+    id: 1,
+    image: "/images/news/photo_2026-08-16_21-37-36.jpg",
+    newspaper: "Chandra Patha",
+    kannadaTitle: "ಮಿಲ್ಟನ್ ಪಬ್ಲಿಕ್ ಸ್ಕೂಲ್",
+    englishTranslation: "Milton Public School",
+    description: "Milton Public School takes immense pride in announcing a phenomenal academic year with a remarkable 98% overall result. This featured announcement in the Chandra Patha daily highlights our top-performing students who have set new benchmarks. The school celebrates 3 distinction holders, 18 first-class achievers, and 10 second-class achievers. Heartfelt congratulations are extended to the students and staff for their relentless dedication. Admissions are now officially open for the upcoming academic session, welcoming a new generation of bright minds.",
+  },
+  {
+    id: 2,
+    image: "/images/news/photo_2026-08-16_21-37-38.jpg",
+    newspaper: "Sanje Varadi",
+    kannadaTitle: "ಮಿಲ್ಟನ್ ಪಬ್ಲಿಕ್ ಸ್ಕೂಲ್",
+    englishTranslation: "Milton Public School",
+    description: "This feature in the Sanje Varadi newspaper showcases Milton Public School's continued legacy of excellence in education. Celebrating an impressive 98% grand result, the advertisement proudly displays the portraits of our highest achievers, showcasing their hard work and success. With students securing top ranks, including 3 distinctions and 18 first-class honors, the school reiterates its commitment to quality education. Parents seeking a nurturing and academically rigorous environment are encouraged to enroll their children, as admissions are currently open.",
+  },
+  {
+    id: 3,
+    image: "/images/news/photo_2026-08-16_21-37-41.jpg",
+    newspaper: "Sanje Varadi",
+    kannadaTitle: "ಮಿಲ್ಟನ್ ಶಾಲಾ ಮಕ್ಕಳಲ್ಲಿ ಸೃಜನಾತ್ಮಕ ಕೌಶಲ್ಯ ಕಲಿಕೆ ಬೆಳೆಸುವ ಪ್ರಯೋಗ : ವಿಜ್ಞಾನ ವಸ್ತು ಪ್ರದರ್ಶನ",
+    englishTranslation: "An Initiative to Foster Creative Skills in Milton School Children: Science Exhibition",
+    description: "To ignite scientific curiosity and foster hands-on learning, Milton Public School recently organized a vibrant Science Exhibition, beautifully captured in this Sanje Varadi news report. The event provided a platform for students to demonstrate their innovative science models, practical experiments, and technological creations. Dignitaries, teachers, and parents were amazed by the students' enthusiasm and deep understanding of scientific concepts. The exhibition successfully encouraged creative problem-solving and critical thinking, proving to be a highly inspiring educational experience for all attendees.",
+  },
+  {
+    id: 4,
+    image: "/images/news/photo_2026-08-16_21-37-42.jpg",
+    newspaper: "Sanje Varadi",
+    kannadaTitle: "ಮಾನ್ವಿ ಮಿಲ್ಟನ್ ಶಾಲೆಯಲ್ಲಿ ಸ್ವಾತಂತ್ರ್ಯ ದಿನಾಚರಣೆ ಆಚರಣೆ",
+    englishTranslation: "Independence Day Celebrations at Manvi's Milton School",
+    description: "The 79th Independence Day was celebrated with immense patriotic fervor at Milton English Medium School in Manvi, as reported by Sanje Varadi. The school premises were beautifully decorated, and the event featured a grand flag hoisting ceremony attended by esteemed chief guests, school management, and enthusiastic students. Distinguished speakers addressed the gathering, urging the youth to imbibe the values of our freedom fighters and contribute meaningfully to the nation's progress. The celebration was marked by inspiring speeches and a strong sense of national pride among the students and staff.",
+  },
+  {
+    id: 5,
+    image: "/images/news/photo_2026-08-16_21-37-44.jpg",
+    newspaper: "Shreevin Vani",
+    kannadaTitle: "ಮಿಲ್ಟನ್ ಪಬ್ಲಿಕ್ ಸ್ಕೂಲ್",
+    englishTranslation: "Milton Public School",
+    description: "Recognized for its stellar academic environment, Milton Public School's outstanding SSLC results were prominently featured in the Shreevin Vani daily newspaper. The announcement celebrates the school's impressive 98% pass rate, acknowledging the sheer hard work of both students and faculty. By highlighting the students who achieved top distinctions and first-class honors, the school demonstrates its track record of academic brilliance. Alongside celebrating these achievements, the publication also serves as an invitation for prospective parents, announcing that admissions are now open for the new academic year.",
+  },
+  {
+    id: 6,
+    image: "/images/news/photo_2026-08-16_21-37-46.jpg",
+    newspaper: "Sanje Varadi",
+    kannadaTitle: "ಮಿಲ್ಟನ್ ಪಬ್ಲಿಕ್ ಶಾಲೆಯಲ್ಲಿ ಅದ್ದೂರಿಯಾಗಿ 80ನೇ ಸ್ವಾತಂತ್ರ್ಯ ದಿನಾಚರಣೆ. ವಿದ್ಯಾರ್ಥಿಗಳು ದೇಶದ ಸಾಧಕರನ್ನು ಪ್ರೇರಣೆಯಾಗಿ ಪಡೆದು ಸಾಧನೆ ಮಾಡಬೇಕು: ಎಂ. ಈರಣ್ಣ",
+    englishTranslation: "Grand 80th Independence Day Celebration at Milton Public School. 'Students should take inspiration from the nation's achievers': M. Eeranna",
+    description: "This extensive news coverage by Sanje Varadi highlights the grand and patriotic 80th Independence Day celebrations held at Milton Public School. The event was graced by prominent local entrepreneur and politician M. Eeranna, who hoisted the national flag and delivered a highly motivating speech. He encouraged the students to look up to the country's great achievers as role models and strive for excellence in their own lives. The ceremony brought together school administration, teachers, and students in a beautiful display of unity, cultural pride, and respect for the nation's rich heritage.",
+  }
+];

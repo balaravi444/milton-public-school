@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:wght@400;500;600;700;800&display=swap');
 :root {
   /* Milton Public School Brand */
   --primary-blue: #0A58CA;
@@ -18,7 +18,7 @@
 
   /* Layout */
   --container-width: 1200px;
-  --section-padding: 80px;
+  --section-padding: 100px;
 
   /* Effects */
   --radius-sm: 10px;
@@ -29,7 +29,7 @@
   --shadow-md: 0 12px 36px rgba(22, 50, 63, 0.08);
   --shadow-hover: 0 16px 48px rgba(0, 144, 192, 0.12);
 
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   color: var(--dark-text);
   background: var(--white);
   font-synthesis: none;
@@ -104,7 +104,7 @@ ol {
   color: var(--primary-blue);
   font-size: 0.85rem;
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
 }
 
@@ -116,13 +116,46 @@ ol {
   line-height: 1.15;
 }
 
+.highlight-glow {
+  background: linear-gradient(135deg, rgba(10, 88, 202, 0.15), rgba(10, 88, 202, 0.05));
+  color: var(--primary-blue) !important;
+  padding: 6px 18px;
+  border-radius: 30px;
+  border: 1px solid rgba(10, 88, 202, 0.25);
+  box-shadow: 
+    0 0 20px rgba(10, 88, 202, 0.25), 
+    inset 0 0 10px rgba(10, 88, 202, 0.15);
+  text-shadow: 0 0 10px rgba(10, 88, 202, 0.4);
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.highlight-glow::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+  transform: skewX(-25deg);
+  animation: shine-glow 3s infinite;
+}
+
+@keyframes shine-glow {
+  0% { left: -100%; }
+  20% { left: 200%; }
+  100% { left: 200%; }
+}
+
 .section-heading p {
   color: var(--muted-text);
 }
 
 @media (max-width: 768px) {
   :root {
-    --section-padding: 60px;
+    --section-padding: 80px;
   }
 
   .container {

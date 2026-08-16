@@ -25,7 +25,7 @@ function AboutJourney() {
           </div>
           
           <div className="journey-content">
-            <span className="eyebrow">Our Legacy</span>
+            <span className="eyebrow highlight-glow">Our Legacy</span>
             <h2 className="journey-title">A Decade of Excellence in Manvi</h2>
             
             <p className="journey-description">

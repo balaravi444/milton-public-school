@@ -25,7 +25,7 @@ function AboutMission() {
       <div className="container">
         
         <div className="mission-header text-center">
-          <span className="eyebrow">Mission & Vision</span>
+          <span className="eyebrow highlight-glow">Mission & Vision</span>
           <h2>Guiding Principles</h2>
           <p className="mission-intro">
             At Milton Public School, our principles form the bedrock of our educational philosophy, guiding our students towards academic and personal excellence.

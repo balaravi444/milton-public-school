@@ -566,4 +566,26 @@
     width: 1px;
     height: 40px;
   }
+}
+
+/* =========================================
+   RESPONSIVE LAYOUT
+========================================= */
+
+@media (max-width: 1024px) {
+  .academics-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .academics-preview {
+    padding: 60px 0;
+  }
+
+  .academics-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
 }

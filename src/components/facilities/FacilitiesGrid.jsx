@@ -1,5 +1,14 @@
+import { useState } from 'react';
+import { ChevronDown, ChevronUp } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
 import './FacilitiesGrid.css';
+
 function FacilitiesGrid() {
+  const [expandedId, setExpandedId] = useState(null);
+
+  const toggleExpand = (id) => {
+    setExpandedId(expandedId === id ? null : id);
+  };
   const facilities = [
     {
       id: 'smart-class',
@@ -77,6 +86,52 @@ function FacilitiesGrid() {
                 </div>
                 <h3>{facility.title}</h3>
                 <p>{facility.description}</p>
+                {facility.id === 'hostel' && (
+                  <div className="facility-expand-container">
+                    <button 
+                      className="facility-expand-btn"
+                      onClick={() => toggleExpand(facility.id)}
+                    >
+                      {expandedId === facility.id ? 'Less Details' : 'More Details'}
+                      {expandedId === facility.id ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
+                    </button>
+                    
+                    <AnimatePresence>
+                      {expandedId === facility.id && (
+                        <motion.div 
+                          className="hostel-details-motion"
+                          initial={{ height: 0, opacity: 0 }}
+                          animate={{ height: 'auto', opacity: 1 }}
+                          exit={{ height: 0, opacity: 0 }}
+                          transition={{ duration: 0.3, ease: 'easeInOut' }}
+                          style={{ overflow: 'hidden', width: '100%' }}
+                        >
+                          <div className="hostel-details">
+                            <div className="hostel-section">
+                              <h4>Daily Schedule</h4>
+                              <ul>
+                                <li><span>Morning Prep:</span> 6:00 AM</li>
+                                <li><span>School Hours:</span> 9:30 AM - 4:15 PM</li>
+                                <li><span>Evening Study:</span> 5:30 PM - 7:00 PM</li>
+                                <li><span>Break:</span> 7:00 PM - 8:00 PM</li>
+                                <li><span>School Homeworks:</span> 8:30 PM - 9:30 PM</li>
+                                <li><span>Lights Out (Sleep):</span> 9:30 PM</li>
+                              </ul>
+                            </div>
+                            <div className="hostel-section">
+                              <h4>Meal Plan</h4>
+                              <p>Wholesome vegetarian meals served daily. Non-vegetarian dishes served 3 times per week.</p>
+                            </div>
+                            <div className="hostel-section">
+                              <h4>Weekend Activities</h4>
+                              <p>Weekend movie screenings and dedicated time for calling parents.</p>
+                            </div>
+                          </div>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </div>
+                )}
                 <div className="facility-card-border"></div>
               </div>
             );

@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import FloatingWhatsApp from './components/ui/FloatingWhatsApp';
+import AlertBanner from './components/layout/AlertBanner';
 
 import Home from './pages/Home';
 import About from './pages/About';
@@ -22,6 +23,7 @@ function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
+      <AlertBanner />
       <Navbar />
 
       <Routes>
