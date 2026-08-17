@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import './AboutPreview.css';
 
 function AboutPreview() {
-  console.log('AboutPreview component rendered');
   return (
     <section className="about-preview section">
 
