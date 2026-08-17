@@ -42,9 +42,10 @@
 }
 
 .journey-experience-badge {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
+  position: relative;
+  margin: -25px auto 0 auto;
+  z-index: 10;
+  width: max-content;
   background: #FFFFFF;
   padding: 15px 25px;
   border-radius: 12px;

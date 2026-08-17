@@ -11,7 +11,6 @@ const navigation = [
   { name: 'Facilities', path: '/facilities' },
   { name: 'Gallery', path: '/gallery' },
   { name: 'News & Events', path: '/news-events' },
-  { name: 'Downloads', path: '/downloads' },
   { name: 'Contact', path: '/contact' },
 ];
 

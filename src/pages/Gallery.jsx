@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import Lightbox from 'yet-another-react-lightbox';
@@ -24,17 +24,10 @@ function Gallery() {
   const [searchParams, setSearchParams] = useSearchParams();
   const queryCategory = searchParams.get('category');
   
-  const [activeCategory, setActiveCategory] = useState(queryCategory || 'all');
+  const activeCategory = queryCategory || 'all';
   const [lightboxIndex, setLightboxIndex] = useState(-1);
 
-  useEffect(() => {
-    if (queryCategory && queryCategory !== activeCategory) {
-      setActiveCategory(queryCategory);
-    }
-  }, [queryCategory]);
-
   const handleFilterClick = (categoryId) => {
-    setActiveCategory(categoryId);
     setSearchParams({ category: categoryId });
   };
 

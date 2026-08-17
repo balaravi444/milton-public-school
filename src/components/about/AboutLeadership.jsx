@@ -8,7 +8,7 @@ function AboutLeadership() {
         
         <div className="leadership-content">
           <div className="leadership-text">
-            <span className="eyebrow">Message from the Principal</span>
+            <span className="eyebrow">Message from the Secretary & Managing Director</span>
             <h2>Shaping Character, Values, and Futures</h2>
             
             <div className="quote-icon">
@@ -26,19 +26,14 @@ function AboutLeadership() {
             </blockquote>
             
             <div className="leadership-author">
-              <h4 className="author-name">The Principal</h4>
-              <p className="author-title">Milton Public School, Manvi</p>
+              <h4 className="author-name">D.V Prakash</h4>
+              <p className="author-title">Secretary & Managing Director, Milton Public School</p>
             </div>
           </div>
           
           <div className="leadership-image-wrapper">
              <div className="leadership-image-frame">
-                {/* Placeholder for Principal's photo */}
-                <div className="leadership-placeholder">
-                  <div className="placeholder-content">
-                     Principal's Portrait
-                  </div>
-                </div>
+                <img src="/images/management/prakash.png" alt="D.V Prakash" className="leadership-image" />
                 
                 <div className="decorative-element square"></div>
                 <div className="decorative-element dots"></div>

@@ -421,6 +421,18 @@
 }
 
 @media (max-width: 768px) {
+  .news-container {
+    padding: 2rem 1rem;
+  }
+
+  .term-block {
+    padding: 1.5rem;
+  }
+
+  .timeline-item {
+    gap: 1rem;
+  }
+
   .news-grid {
     grid-template-columns: 1fr;
   }

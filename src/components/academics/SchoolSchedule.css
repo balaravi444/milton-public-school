@@ -187,3 +187,20 @@
     gap: 80px;
   }
 }
+
+@media (max-width: 768px) {
+  .schedule-box {
+    flex-direction: column;
+    text-align: center;
+    padding: 25px 20px;
+    gap: 15px;
+  }
+  
+  .time-display {
+    font-size: 1.8rem;
+  }
+  
+  .time-display.small {
+    font-size: 1.2rem;
+  }
+}

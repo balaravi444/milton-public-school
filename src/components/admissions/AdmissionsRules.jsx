@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './AdmissionsRules.css';
-import { ChevronDown, ChevronUp, Download } from 'lucide-react';
+import { ChevronDown, ChevronUp, Clock, Shield, CreditCard, Users } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 function AdmissionsRules() {
   const [expandedSection, setExpandedSection] = useState(null);
-  const [accepted, setAccepted] = useState(false);
 
   const toggleSection = (section) => {
     setExpandedSection(expandedSection === section ? null : section);
@@ -14,7 +13,8 @@ function AdmissionsRules() {
   const categories = [
     {
       id: 'timings',
-      title: '🕒 Timings & Attendance',
+      title: 'Timings & Attendance',
+      icon: <Clock size={24} className="rule-icon" />,
       rules: [
         "Regular School Timings: 9:30 A.M to 4:15 P.M.",
         "Saturday Timings: 9:30 A.M to 1:00 P.M.",
@@ -27,7 +27,8 @@ function AdmissionsRules() {
     },
     {
       id: 'conduct',
-      title: '👔 Code of Conduct & Discipline',
+      title: 'Code of Conduct & Discipline',
+      icon: <Shield size={24} className="rule-icon" />,
       rules: [
         "We expect all students to maintain implicit obedience, courtesy in speech and conduct, and high standards of cleanliness and personal hygiene.",
         "To foster an immersive learning environment, all pupils are encouraged and expected to speak only in English within the school premises.",
@@ -38,7 +39,8 @@ function AdmissionsRules() {
     },
     {
       id: 'fees',
-      title: '💳 Fee Policies & Admissions',
+      title: 'Fee Policies & Admissions',
+      icon: <CreditCard size={24} className="rule-icon" />,
       rules: [
         "A valid birth and caste certificate from municipal records must be produced during admission.",
         "Once paid, the yearly school fees, admission fees, and hostel fees are non-refundable.",
@@ -51,7 +53,8 @@ function AdmissionsRules() {
     },
     {
       id: 'parents',
-      title: '🤝 Parent-School Partnership',
+      title: 'Parent-School Partnership',
+      icon: <Users size={24} className="rule-icon" />,
       rules: [
         "Progress Cards are issued after tests. Please ensure they are duly signed by a parent or guardian and returned within three days.",
         "Parents play a vital role in enforcing regularity and discipline. We kindly request that you ensure your child prepares their lessons daily and arrives on time.",
@@ -81,7 +84,10 @@ function AdmissionsRules() {
                 className="rules-accordion-toggle"
                 onClick={() => toggleSection(category.id)}
               >
-                <h3>{category.title}</h3>
+                <h3 style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                  <span style={{ display: 'flex', alignItems: 'center', color: '#B5952F' }}>{category.icon}</span>
+                  {category.title}
+                </h3>
                 {expandedSection === category.id ? <ChevronUp size={24} /> : <ChevronDown size={24} />}
               </button>
               
@@ -111,36 +117,6 @@ function AdmissionsRules() {
           ))}
         </div>
 
-        <div className="rules-declaration">
-          <h4>Declaration</h4>
-          <p>
-            "I have read the rules and regulations with sound mind and body and thoroughly understand that I shall abide by them."
-          </p>
-          
-          <div className="declaration-checkbox-wrapper">
-            <input 
-              type="checkbox" 
-              id="declaration-check" 
-              checked={accepted}
-              onChange={(e) => setAccepted(e.target.checked)}
-            />
-            <label htmlFor="declaration-check">I agree to the Rules and Regulations</label>
-          </div>
-
-          <a 
-            href={accepted ? "/admission-form.pdf" : undefined}
-            download={accepted ? "Milton_Public_School_Admission_Form.pdf" : undefined}
-            className={`download-form-btn ${!accepted ? 'disabled' : ''}`}
-            onClick={(e) => {
-              if (!accepted) {
-                e.preventDefault();
-              }
-            }}
-          >
-            <Download size={20} />
-            Download Admission Form (PDF)
-          </a>
-        </div>
       </div>
     </section>
   );

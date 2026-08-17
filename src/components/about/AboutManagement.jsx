@@ -3,10 +3,12 @@ import { User, ShieldCheck, Briefcase, Landmark } from 'lucide-react';
 
 function AboutManagement() {
   const management = [
-    { name: 'D. Suryaprabha', title: 'President', icon: ShieldCheck, image: '/images/management/suryaprabha.jpg' },
-    { name: 'D. Jayanth', title: 'Vice President', icon: Briefcase },
-    { name: 'D.V Prakash', title: 'Secretary', icon: User },
-    { name: 'D. Soumya', title: 'Treasurer', icon: Landmark },
+    { name: 'D. Suryaprabha', title: 'President', icon: ShieldCheck, image: '/images/management/suryaprabha.png', imageStyle: { transform: 'scale(1.15)', transformOrigin: 'top center', objectPosition: 'center 15%' } },
+    { name: 'D. Jayanth', title: 'Vice President', icon: Briefcase, image: '/images/management/jayanth.jpg', imageStyle: { transform: 'scale(1.15)', transformOrigin: 'top center', objectPosition: 'center 15%' } },
+    { name: 'D.V Prakash', title: 'Secretary & Managing Director', icon: User, image: '/images/management/prakash.png', imageStyle: { transform: 'scale(1.25)', transformOrigin: 'center center' } },
+    { name: 'D. Soumya', title: 'Treasurer', icon: Landmark, image: '/images/management/soumya.png', imageStyle: { transform: 'scale(1.15)', transformOrigin: 'center center' } },
+    { name: 'Krupasagar Patil', title: 'Trustee', icon: User, image: '/images/management/krupasagar_patil.png', imageStyle: { objectPosition: 'center 15%' } },
+    { name: 'M. Siraj Ali', title: 'Board Member', icon: User, image: '/images/management/siraj_ali.png' },
   ];
 
   return (
@@ -29,7 +31,7 @@ function AboutManagement() {
                 <div className="management-avatar-wrapper">
                   {member.image ? (
                     <div className="management-dp-container">
-                      <img src={member.image} alt={member.name} className="management-dp" />
+                      <img src={member.image} alt={member.name} className="management-dp" style={member.imageStyle || {}} />
                     </div>
                   ) : (
                     <div className="management-avatar">

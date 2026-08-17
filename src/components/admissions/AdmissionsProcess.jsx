@@ -1,4 +1,4 @@
-import React from 'react';
+import { ClipboardEdit, MapPin, FolderOpen, GraduationCap } from 'lucide-react';
 import './AdmissionsProcess.css';
 
 function AdmissionsProcess() {
@@ -7,7 +7,7 @@ function AdmissionsProcess() {
       id: 1,
       title: "Submit Inquiry",
       description: "Fill out the online inquiry form or visit our campus to express your interest.",
-      icon: <span role="img" aria-label="form" className="emoji-icon">📝</span>,
+      icon: <ClipboardEdit size={32} strokeWidth={1.5} />,
       bgColor: '#FDF8E8',
       textColor: '#B5952F'
     },
@@ -15,7 +15,7 @@ function AdmissionsProcess() {
       id: 2,
       title: "Campus Visit",
       description: "Tour our world-class facilities and meet with our academic counseling team.",
-      icon: <span role="img" aria-label="school" className="emoji-icon">🏫</span>,
+      icon: <MapPin size={32} strokeWidth={1.5} />,
       bgColor: '#FDF8E8',
       textColor: '#B5952F'
     },
@@ -23,7 +23,7 @@ function AdmissionsProcess() {
       id: 3,
       title: "Document Submission",
       description: "Provide required documents including birth certificate, past academic records, and ID proofs.",
-      icon: <span role="img" aria-label="documents" className="emoji-icon">📂</span>,
+      icon: <FolderOpen size={32} strokeWidth={1.5} />,
       bgColor: '#FDF8E8',
       textColor: '#B5952F'
     },
@@ -31,7 +31,7 @@ function AdmissionsProcess() {
       id: 4,
       title: "Enrollment",
       description: "Complete the fee payment and final enrollment formalities to secure the admission.",
-      icon: <span role="img" aria-label="enrollment" className="emoji-icon">🎓</span>,
+      icon: <GraduationCap size={32} strokeWidth={1.5} />,
       bgColor: '#FDF8E8',
       textColor: '#B5952F'
     }
@@ -49,7 +49,7 @@ function AdmissionsProcess() {
         </div>
 
         <div className="stages-timeline">
-          {steps.map((step, index) => (
+          {steps.map((step) => (
             <div key={step.id} className="timeline-card">
               <div 
                 className="timeline-icon-circle"

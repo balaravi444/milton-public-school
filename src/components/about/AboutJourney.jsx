@@ -15,10 +15,10 @@ function AboutJourney() {
                  alt="Milton Public School Campus" 
                  className="journey-image"
                />
-               <div className="journey-experience-badge">
-                 <span className="badge-year">2009</span>
-                 <span className="badge-text">Legacy of Excellence</span>
-               </div>
+            </div>
+            <div className="journey-experience-badge">
+              <span className="badge-year">2009</span>
+              <span className="badge-text">Legacy of Excellence</span>
             </div>
             
             <div className="decorative-dots left"></div>

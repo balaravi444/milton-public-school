@@ -143,7 +143,7 @@
   }
   
   .header-phone {
-    display: none;
+    /* visible on tablet */
   }
   
   .header-cta {

@@ -1,8 +1,32 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, FileCheck, PhoneCall } from 'lucide-react';
 import './AdmissionsPreview.css';
 
 function AdmissionsPreview() {
+  const [formData, setFormData] = useState({
+    parentName: '',
+    phone: '',
+    grade: ''
+  });
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    
+    // School's primary WhatsApp number (without the +)
+    const whatsappNumber = "918088291165"; 
+    
+    const message = `Hello Milton Public School,\n\nI would like to request a callback regarding admissions.\n\n*Parent's Name:* ${formData.parentName}\n*Phone Number:* ${formData.phone}\n*Grade Interested:* ${formData.grade}\n\nPlease call me back. Thank you!`;
+    
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+    
+    // Open WhatsApp in a new tab
+    window.open(whatsappUrl, '_blank');
+    
+    // Reset the form
+    setFormData({ parentName: '', phone: '', grade: '' });
+  };
+
   return (
     <section className="admissions-preview-section section-padding">
       <div className="container">
@@ -50,19 +74,32 @@ function AdmissionsPreview() {
             
             <form 
               className="admissions-callback-form" 
-              onSubmit={(e) => { 
-                e.preventDefault(); 
-                alert('Thank you! Our office will call you back shortly.'); 
-              }}
+              onSubmit={handleSubmit}
             >
               <div className="form-group">
-                <input type="text" placeholder="Parent's Name" required />
+                <input 
+                  type="text" 
+                  placeholder="Parent's Name" 
+                  required 
+                  value={formData.parentName}
+                  onChange={(e) => setFormData({...formData, parentName: e.target.value})}
+                />
               </div>
               <div className="form-group">
-                <input type="tel" placeholder="Phone Number" required />
+                <input 
+                  type="tel" 
+                  placeholder="Phone Number" 
+                  required 
+                  value={formData.phone}
+                  onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                />
               </div>
               <div className="form-group">
-                <select required defaultValue="">
+                <select 
+                  required 
+                  value={formData.grade}
+                  onChange={(e) => setFormData({...formData, grade: e.target.value})}
+                >
                   <option value="" disabled>Select Grade</option>
                   <option value="Baby Class">Baby Class</option>
                   <option value="Primary">Primary School</option>
@@ -71,7 +108,7 @@ function AdmissionsPreview() {
                 </select>
               </div>
               <button type="submit" className="admissions-callback-submit">
-                Submit Inquiry →
+                Submit on WhatsApp →
               </button>
             </form>
           </div>

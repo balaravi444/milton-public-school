@@ -31,7 +31,6 @@ function Footer() {
               <li><Link to="/facilities">Facilities</Link></li>
               <li><Link to="/gallery">Gallery</Link></li>
               <li><Link to="/news-events">News & Events</Link></li>
-              <li><Link to="/downloads">Downloads</Link></li>
               <li><Link to="/contact">Contact</Link></li>
             </ul>
           </div>

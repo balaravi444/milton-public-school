@@ -1,6 +1,7 @@
 import './Contact.css';
 import PageHeader from '../components/ui/PageHeader';
 import { MapPin, Phone, Mail, Navigation } from 'lucide-react';
+import Collaborations from '../components/contact/Collaborations';
 
 function Contact() {
   const mapEmbedUrl = "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Milton%20Public%20School%20Manvi,%20Mehdi%20Nagar,%20Manvi,%20Karnataka%20584123&t=&z=18&ie=UTF8&iwloc=B&output=embed";
@@ -79,6 +80,8 @@ function Contact() {
           </div>
         </div>
       </section>
+
+      <Collaborations />
     </main>
   );
 }
