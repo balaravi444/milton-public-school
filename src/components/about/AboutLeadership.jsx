@@ -26,14 +26,14 @@ function AboutLeadership() {
             </blockquote>
 
             <div className="leadership-author">
-              <h4 className="author-name">D.V Prakash</h4>
+              <h4 className="author-name">D.V. Prakash</h4>
               <p className="author-title">Secretary & Managing Director, Milton Public School</p>
             </div>
           </div>
 
           <div className="leadership-image-wrapper">
             <div className="leadership-image-frame">
-              <img loading="lazy" src="/images/management/prakash.png" alt="D.V.Prakash" className="leadership-image" />
+              <img loading="lazy" src="/images/management/D.V. PRAKASH.webp" alt="D.V.Prakash" className="leadership-image" />
 
               <div className="decorative-element square"></div>
               <div className="decorative-element dots"></div>

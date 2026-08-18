@@ -1,7 +1,7 @@
 export const newsData = [
   {
     id: 1,
-    image: "/images/news/photo_2026-08-16_21-37-36.jpg",
+    image: "/images/news/photo_2026-08-16_21-37-36.webp",
     newspaper: "Chandra Patha",
     kannadaTitle: "ಮಿಲ್ಟನ್ ಪಬ್ಲಿಕ್ ಸ್ಕೂಲ್",
     englishTranslation: "Milton Public School",
@@ -9,7 +9,7 @@ export const newsData = [
   },
   {
     id: 2,
-    image: "/images/news/photo_2026-08-16_21-37-38.jpg",
+    image: "/images/news/photo_2026-08-16_21-37-38.webp",
     newspaper: "Sanje Varadi",
     kannadaTitle: "ಮಿಲ್ಟನ್ ಪಬ್ಲಿಕ್ ಸ್ಕೂಲ್",
     englishTranslation: "Milton Public School",
@@ -17,7 +17,7 @@ export const newsData = [
   },
   {
     id: 3,
-    image: "/images/news/photo_2026-08-16_21-37-41.jpg",
+    image: "/images/news/photo_2026-08-16_21-37-41.webp",
     newspaper: "Sanje Varadi",
     kannadaTitle: "ಮಿಲ್ಟನ್ ಶಾಲಾ ಮಕ್ಕಳಲ್ಲಿ ಸೃಜನಾತ್ಮಕ ಕೌಶಲ್ಯ ಕಲಿಕೆ ಬೆಳೆಸುವ ಪ್ರಯೋಗ : ವಿಜ್ಞಾನ ವಸ್ತು ಪ್ರದರ್ಶನ",
     englishTranslation: "An Initiative to Foster Creative Skills in Milton School Children: Science Exhibition",
@@ -25,7 +25,7 @@ export const newsData = [
   },
   {
     id: 4,
-    image: "/images/news/photo_2026-08-16_21-37-42.jpg",
+    image: "/images/news/photo_2026-08-16_21-37-42.webp",
     newspaper: "Sanje Varadi",
     kannadaTitle: "ಮಾನ್ವಿ ಮಿಲ್ಟನ್ ಶಾಲೆಯಲ್ಲಿ ಸ್ವಾತಂತ್ರ್ಯ ದಿನಾಚರಣೆ ಆಚರಣೆ",
     englishTranslation: "Independence Day Celebrations at Manvi's Milton School",
@@ -33,7 +33,7 @@ export const newsData = [
   },
   {
     id: 5,
-    image: "/images/news/photo_2026-08-16_21-37-44.jpg",
+    image: "/images/news/photo_2026-08-16_21-37-44.webp",
     newspaper: "Shreevin Vani",
     kannadaTitle: "ಮಿಲ್ಟನ್ ಪಬ್ಲಿಕ್ ಸ್ಕೂಲ್",
     englishTranslation: "Milton Public School",
@@ -41,7 +41,7 @@ export const newsData = [
   },
   {
     id: 6,
-    image: "/images/news/photo_2026-08-16_21-37-46.jpg",
+    image: "/images/news/photo_2026-08-16_21-37-46.webp",
     newspaper: "Sanje Varadi",
     kannadaTitle: "ಮಿಲ್ಟನ್ ಪಬ್ಲಿಕ್ ಶಾಲೆಯಲ್ಲಿ ಅದ್ದೂರಿಯಾಗಿ 80ನೇ ಸ್ವಾತಂತ್ರ್ಯ ದಿನಾಚರಣೆ. ವಿದ್ಯಾರ್ಥಿಗಳು ದೇಶದ ಸಾಧಕರನ್ನು ಪ್ರೇರಣೆಯಾಗಿ ಪಡೆದು ಸಾಧನೆ ಮಾಡಬೇಕು: ಎಂ. ಈರಣ್ಣ",
     englishTranslation: "Grand 80th Independence Day Celebration at Milton Public School. 'Students should take inspiration from the nation's achievers': M. Eeranna",

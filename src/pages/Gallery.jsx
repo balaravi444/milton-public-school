@@ -18,6 +18,7 @@ const categories = [
   { id: 'school-trips', label: 'School Trips' },
   { id: 'student-life', label: 'Student Life' },
   { id: 'independence-day', label: 'Independence Day' },
+  { id: 'other', label: 'Others' },
 ];
 
 function Gallery() {

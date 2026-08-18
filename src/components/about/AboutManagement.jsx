@@ -3,12 +3,12 @@ import { User, ShieldCheck, Briefcase, Landmark } from 'lucide-react';
 
 function AboutManagement() {
   const management = [
-    { name: 'D. Suryaprabha', title: 'President', icon: ShieldCheck, image: '/images/management/suryaprabha.png', imageStyle: { transform: 'scale(1.15)', transformOrigin: 'top center', objectPosition: 'center 15%' } },
-    { name: 'D. Jayanth', title: 'Vice President', icon: Briefcase, image: '/images/management/jayanth.jpg', imageStyle: { transform: 'scale(1.15)', transformOrigin: 'top center', objectPosition: 'center 15%' } },
-    { name: 'D.V Prakash', title: 'Secretary & Managing Director', icon: User, image: '/images/management/prakash.png', imageStyle: { transform: 'scale(1.25)', transformOrigin: 'center center' } },
-    { name: 'D. Soumya', title: 'Treasurer', icon: Landmark, image: '/images/management/soumya.png', imageStyle: { transform: 'scale(1.15)', transformOrigin: 'center center' } },
-    { name: 'Krupasagar Patil', title: 'Trustee', icon: User, image: '/images/management/krupasagar_patil.png', imageStyle: { objectPosition: 'center 15%' } },
-    { name: 'M. Siraj Ali', title: 'Board Member', icon: User, image: '/images/management/siraj_ali.png' },
+    { name: 'D. Suryaprabha', title: 'President', icon: ShieldCheck, image: '/images/management/D. Suryaprabha.webp', imageStyle: { transform: 'scale(1.15)', transformOrigin: 'top center', objectPosition: 'center 15%' } },
+    { name: 'D. Jayanth', title: 'Vice President', icon: Briefcase, image: '/images/management/D. Jayanth.webp', imageStyle: { transform: 'scale(1.15)', transformOrigin: 'top center', objectPosition: 'center 15%' } },
+    { name: 'D.V. Prakash', title: 'Secretary & Managing Director', icon: User, image: '/images/management/D.V. PRAKASH.webp', imageStyle: { transform: 'scale(1.25)', transformOrigin: 'center center' } },
+    { name: 'D. Soumya', title: 'Treasurer', icon: Landmark, image: '/images/management/D. Soumya.webp', imageStyle: { transform: 'scale(1.15)', transformOrigin: 'center center' } },
+    { name: 'Krupasagar Patil', title: 'Trustee', icon: User, image: '/images/management/Krupasagar Patil.webp', imageStyle: { objectPosition: 'center 15%' } },
+    { name: 'M. Siraj Ali', title: 'Board Member', icon: User, image: '/images/management/M. Siraj Ali.webp' },
   ];
 
   return (
