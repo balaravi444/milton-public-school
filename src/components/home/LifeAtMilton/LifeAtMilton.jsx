@@ -130,7 +130,7 @@ function LifeAtMilton() {
                 >
 
                   <div className="life-card-image-wrapper">
-                    <img src={activity.image} alt={activity.title} className="life-card-image" />
+                    <img loading="lazy" src={activity.image} alt={activity.title} className="life-card-image" />
                     <div className="life-card-overlay"></div>
                     
                     <div className="life-card-top">

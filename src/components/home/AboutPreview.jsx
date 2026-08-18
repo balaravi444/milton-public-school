@@ -23,7 +23,7 @@ function AboutPreview() {
 
             <div className="about-image-frame">
 
-              <img
+              <img loading="lazy"
                 src="/images/school-building.png"
                 alt="Milton Public School Manvi"
               />

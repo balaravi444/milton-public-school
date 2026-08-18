@@ -40,7 +40,9 @@ function Footer() {
             <ul className="contact-list">
               <li>
                 <MapPin size={18} className="contact-icon" />
-                <span>Manvi, Karnataka</span>
+                <span style={{lineHeight: '1.4'}}>
+                  Milton Public School Manvi Behind I.B Opposite Town Hall Manvi, Raichur-584123
+                </span>
               </li>
               <li>
                 <PhoneCall size={18} className="contact-icon" />
@@ -73,6 +75,9 @@ function Footer() {
             </ul>
             
             <div className="footer-social">
+              <a href="https://www.facebook.com/share/1BkUjWfsyd/" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+              </a>
               <a href="https://x.com/MiltonSchool999" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="X (Twitter)">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 1200 1227"><path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z"/></svg>
               </a>

@@ -27,7 +27,7 @@ function AcademicsPreview() {
     {
       icon: BookOpen,
       number: '03',
-      title: 'Middle School',
+      title: 'Higher Primary',
       description:
         'Cultivating critical thinking, intellectual independence, and advanced problem-solving capabilities.',
     },

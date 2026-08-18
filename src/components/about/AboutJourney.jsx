@@ -10,7 +10,7 @@ function AboutJourney() {
           <div className="journey-image-wrapper">
             {/* The main school building image */}
             <div className="journey-image-frame">
-               <img 
+               <img loading="lazy"
                  src="/images/school-building.png" 
                  alt="Milton Public School Campus" 
                  className="journey-image"

@@ -60,7 +60,7 @@ function SchoolSchedule() {
           
           <div className="schedule-image-wrapper">
              <div className="schedule-image-frame">
-                <img 
+                <img loading="lazy" 
                   src="/images/school-building.png" 
                   alt="Milton Public School Campus" 
                   className="schedule-image"

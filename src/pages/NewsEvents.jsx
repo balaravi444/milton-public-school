@@ -43,7 +43,7 @@ function NewsEvents() {
               <div key={item.id} className="news-card">
                 <div className="news-image-container">
                   <div className="news-badge">News</div>
-                  <img src={item.image} alt={item.englishTranslation} className="news-image" />
+                  <img loading="lazy" src={item.image} alt={item.englishTranslation} className="news-image" />
                 </div>
                 
                 <div className="news-content">
@@ -115,7 +115,7 @@ function NewsEvents() {
             >
               &times;
             </button>
-            <img src={selectedImage} alt="Full newspaper clipping" className="modal-image" />
+            <img loading="lazy" src={selectedImage} alt="Full newspaper clipping" className="modal-image" />
           </div>
         </div>
       )}

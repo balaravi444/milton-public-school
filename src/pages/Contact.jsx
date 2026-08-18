@@ -30,7 +30,7 @@ function Contact() {
                   </div>
                   <div>
                     <h4>Our Location</h4>
-                    <p>Milton Public School Manvi, X3R5+R3P, Mehdi Nagar, Manvi, Karnataka 584123</p>
+                    <p>Milton Public School Manvi Behind I.B Opposite Town Hall Manvi, Raichur-584123</p>
                   </div>
                 </div>
 

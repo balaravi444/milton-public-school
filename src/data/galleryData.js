@@ -353,18 +353,7 @@ export const galleryData = [
     "src": "/images/gallery/student-life/student-life-10.jpg",
     "alt": "student-life photo",
     "category": "student-life"
-  },
-  {
-    "id": 60,
-    "src": "/images/gallery/classrooms/classroom-01.png",
-    "alt": "classroom photo",
-    "category": "classroom"
-  },
-  {
-    "id": 61,
-    "src": "/images/gallery/classrooms/classroom-02.png",
-    "alt": "classroom photo",
-    "category": "classroom"
+
   },
   {
     "id": 62,

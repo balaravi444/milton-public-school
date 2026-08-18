@@ -103,7 +103,7 @@ function AdmissionsPreview() {
                   <option value="" disabled>Select Grade</option>
                   <option value="Baby Class">Baby Class</option>
                   <option value="Primary">Primary School</option>
-                  <option value="Middle">Middle School</option>
+                  <option value="Middle">Higher Primary</option>
                   <option value="High School">High School (10th)</option>
                 </select>
               </div>

@@ -82,7 +82,7 @@ function FacilitiesGrid() {
               <div key={facility.id} className="facility-card-premium">
                 <div className="facility-icon-glow"></div>
                 <div className="facility-icon-wrapper-premium">
-                  <img src={facility.image} alt={facility.title} className="facility-icon-image" />
+                  <img loading="lazy" src={facility.image} alt={facility.title} className="facility-icon-image" />
                 </div>
                 <h3>{facility.title}</h3>
                 <p>{facility.description}</p>

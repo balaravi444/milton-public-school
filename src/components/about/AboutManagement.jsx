@@ -31,7 +31,7 @@ function AboutManagement() {
                 <div className="management-avatar-wrapper">
                   {member.image ? (
                     <div className="management-dp-container">
-                      <img src={member.image} alt={member.name} className="management-dp" style={member.imageStyle || {}} />
+                      <img loading="lazy" src={member.image} alt={member.name} className="management-dp" style={member.imageStyle || {}} />
                     </div>
                   ) : (
                     <div className="management-avatar">

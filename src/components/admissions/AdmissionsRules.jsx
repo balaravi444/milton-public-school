@@ -17,7 +17,7 @@ function AdmissionsRules() {
       icon: <Clock size={24} className="rule-icon" />,
       rules: [
         "Regular School Timings: 9:30 A.M to 4:15 P.M.",
-        "Saturday Timings: 9:30 A.M to 1:00 P.M.",
+        "Saturday Timings: 9:30 A.M to 1:15 P.M.",
         "We encourage punctual and regular attendance to ensure your child doesn't miss out on important learning.",
         "Leaves of absence require prior written approval from parents or guardians.",
         "Students should arrive before the school day begins. To maintain a focused environment, late arrivals may not be permitted to enter the class.",
@@ -53,7 +53,7 @@ function AdmissionsRules() {
     },
     {
       id: 'parents',
-      title: 'Parent-School Partnership',
+      title: 'Community Guidelines',
       icon: <Users size={24} className="rule-icon" />,
       rules: [
         "Progress Cards are issued after tests. Please ensure they are duly signed by a parent or guardian and returned within three days.",

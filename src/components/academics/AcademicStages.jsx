@@ -18,7 +18,7 @@ function AcademicStages() {
       icon: Compass
     },
     {
-      title: 'Middle School',
+      title: 'Higher Primary',
       desc: 'Expanding intellectual horizons and developing critical problem-solving capabilities to prepare students for rigorous higher-level academics.',
       bgColor: '#FDF8E8',
       textColor: '#B5952F',

@@ -57,15 +57,15 @@ function Gallery() {
 
           {/* Uniform Grid */}
           <motion.div layout className="gallery-grid">
-            <AnimatePresence>
+            <AnimatePresence mode="popLayout">
               {filteredImages.map((image, index) => (
                 <motion.div
                   key={image.id}
                   layout
-                  initial={{ opacity: 0, y: 80, scale: 0.95 }}
-                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{ once: true, margin: "-50px" }}
-                  transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: (index % 4) * 0.1 }}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.8 }}
+                  transition={{ duration: 0.4 }}
                   className="gallery-item"
                   onClick={() => setLightboxIndex(index)}
                 >
